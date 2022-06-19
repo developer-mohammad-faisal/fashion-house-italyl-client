@@ -74,6 +74,9 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <div>
+        <h1 className="bg-black text-white text-center h-16">Copyright © 2022, Mabel-Fashion Powered by Shopify Powered by Shopify</h1>
+      </div>
     </div>
   );
 };
