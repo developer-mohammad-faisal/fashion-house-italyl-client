@@ -26,40 +26,50 @@ const Footer = () => {
         </div>
 
         <div>
-          <span class="footer-title">Services</span>
-          <a class="link link-hover">Branding</a>
-          <a class="link link-hover">Design</a>
-          <a class="link link-hover">Marketing</a>
-          <a class="link link-hover">Advertisement</a>
+          <span class="text-2xl font-bold">Help</span>
+          <a href="facebook.com" className="hover:text-red-500">Contact us</a>
+          <a href="facebook.com" className="hover:text-red-500">Refund Policy</a>
+          <a href="facebook.com" className="hover:text-red-500">Privacy Policy</a>
+          <a href="facebook.com" className="hover:text-red-500">Terms od service</a>
+          <a href="facebook.com" className="hover:text-red-500">Information</a>
+        
         </div>
         <div>
-          <span class="footer-title">Company</span>
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
+          <span class="text-2xl font-bold">Support</span>
+          <a href="facebook.com" className="hover:text-red-500">Contact us</a>
+          <a href="facebook.com" className="hover:text-red-500">About us</a>
+          <a href="facebook.com" className="hover:text-red-500">Careers</a>
+          <a href="facebook.com" className="hover:text-red-500">Refund & Returns</a>
+          <a href="facebook.com" className="hover:text-red-500">Deliveries</a>
+          
         </div>
         <div>
-          <span class="footer-title">Legal</span>
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
+          <span class="text-2xl font-bold">Information</span>
+          <a href="facebook.com" className="hover:text-red-500">Search Terms</a>
+          <a href="facebook.com" className="hover:text-red-500">Advance Search</a>
+          <a href="facebook.com" className="hover:text-red-500">Help & Faq's</a>
+          <a href="facebook.com" className="hover:text-red-500">Store Location</a>
+          <a href="facebook.com" className="hover:text-red-500">Orders & Returns</a>
         </div>
         <div>
-          <span class="footer-title">Newsletter</span>
+          <span class="text-2xl font-bold">Subscribe to our newsletter</span>
           <div class="form-control w-80">
             <label class="label">
-              <span class="label-text">Enter your email address</span>
+              <span class="label-text">A short sentence describing what someone will receive by subscribing</span>
             </label>
             <div class="relative">
               <input
                 type="text"
-                placeholder="username@site.com"
+                placeholder="Email address"
                 class="input input-bordered w-full pr-16"
               />
               <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">
                 Subscribe
               </button>
+              <div>
+              <span class=" text-2xl font-bold">Contact With us</span>
+
+              </div>
             </div>
           </div>
         </div>
