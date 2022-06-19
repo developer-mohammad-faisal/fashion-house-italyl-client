@@ -3,9 +3,7 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      <h2>
-        Home <i class="fa-solid fa-user"></i>
-      </h2>
+      <h2>Welcome to Home</h2>
     </div>
   );
 };
