@@ -10,18 +10,16 @@ import {
   faUser,
   faSearch,
   faHeart,
-  faHamburger,
-  faBars,
   faClose,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../../assets/images/logo/logo.webp";
-import iconClose from "../../../assets/images/icon/close.png";
+// import iconClose from "../../../assets/images/icon/close.png";
 import iconHamburger from "../../../assets/images/icon/hamburger.png";
 import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import { menus } from "../../../StaticData/Menu";
-import loveIcon from "../../../assets/images/icon/loveIcon.png";
+// import loveIcon from "../../../assets/images/icon/loveIcon.png";
 
 const Navbar = () => {
   let [open, setOpen] = useState(false);
@@ -114,51 +112,6 @@ const Navbar = () => {
                 </div>
               </Link>
             </div>
-            {/* <div className=" hidden lg:flex text-white">
-              <ul className="menu menu-horizontal p-0 ">
-                <div>
-                  <select
-                    name="categories"
-                    id="categories"
-                    className=" bg-[#3A3A3A] w-48 h-10 text-sm px-3 "
-                  >
-                    <option value="All Categories" disabled selected>
-                      All Categories
-                    </option>
-                    <option value="High Heels">High Heels</option>
-                    <option value="Flat Slippers">Flat Slippers</option>
-                    <option value="Hand Bags">Hand Bags</option>
-                    <option value="Modern Tops">Modern Tops</option>
-                    <option value="Fittops">Fittops</option>
-                    <option value="T-shirt">T-shirt</option>
-                    <option value="Jeans">Jeans</option>
-                  </select>
-                </div>
-                <div className="bg-[#3A3A3A] w-64 h-10 text-sm px-3 border-l-2 flex items-center justify-between">
-                  <input
-                    type="text"
-                    placeholder="Search.."
-                    className="bg-[#3A3A3A] focus:outline-none placeholder:text-white"
-                  />
-                  <span className=" text-white ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 flex items-center"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                      />
-                    </svg>
-                  </span>
-                </div>
-              </ul>
-            </div> */}
             <div className="flex items-center gap-x-10 mt-2">
               <div className=" hidden  lg:flex text-white ">
                 <ul className="menu menu-horizontal p-0 ">
