@@ -75,10 +75,12 @@ const Navbar = () => {
                 </select>
               </ul>
             </div>
-            <a className="btn btn-ghost normal-case text-xl">
-              {" "}
-              <img className="" src={logo} alt="" />{" "}
-            </a>
+            <Link to="/home">
+              <a className="btn btn-ghost normal-case text-xl">
+                {" "}
+                <img className="" src={logo} alt="" />{" "}
+              </a>
+            </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal p-0">
