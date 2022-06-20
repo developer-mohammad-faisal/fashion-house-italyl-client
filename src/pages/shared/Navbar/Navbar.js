@@ -14,6 +14,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../../assets/images/logo/logo.webp";
 import iconClose from "../../../assets/images/icon/close.png";
 import iconHamburger from "../../../assets/images/icon/hamburger.png";
+import { Link } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
 
 const Navbar = () => {
   let [open, steepen] = useState(false);
@@ -26,7 +28,9 @@ const Navbar = () => {
     { name: "Accessories" },
     { name: "Page" },
   ];
-
+  
+const Navbar = () => {
+  const { logOut, user } = useAuth();
   return (
     <React.Fragment>
       <section>
@@ -78,6 +82,23 @@ const Navbar = () => {
                     </small>
                   </a>
                 </li>
+              <ul tabIndex="0" className="dropdown-content menu p-3 shadow bg-base-100 rounded-box w-44">
+                {user.displayName ? (
+                  <div>
+                    <li>
+                      <button onClick={logOut}>Logout</button>
+                    </li>
+                  </div>
+                ) : (
+                  <div>
+                    <li>
+                      <Link to="/login">Login </Link>
+                    </li>
+                    <li>
+                      <Link to="/register">Create Account</Link>
+                    </li>
+                  </div>
+                )}
               </ul>
             </div>
           </div>
@@ -105,9 +126,14 @@ const Navbar = () => {
                 </select>
               </ul>
             </div>
-            <div className="">
-              <img className="" src={logo} alt="logo" />{" "}
-            </div>
+          
+            <Link to="/home">
+              <a className="btn btn-ghost normal-case text-xl">
+                {" "}
+                <img className="" src={logo} alt="" />{" "}
+              </a>
+            </Link>
+
           </div>
           <div className=" hidden lg:flex">
             <ul className="menu menu-horizontal p-0">
