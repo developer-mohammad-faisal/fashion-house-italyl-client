@@ -2,10 +2,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import {
+  faArrowRightToBracket,
   faBagShopping,
   faEnvelope,
   faHeart,
   faPhone,
+  faRightFromBracket,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../../assets/images/logo/logo.webp";
@@ -27,6 +30,7 @@ const Navbar = () => {
   return (
     <React.Fragment>
       <section>
+        
         {/*phone, email and My Account top navbar */}
         <div className="flex px-5 lg:px-10 justify-between  items-center">
           <div className="hidden lg:inline-flex gap-x-5">
@@ -57,13 +61,13 @@ const Navbar = () => {
               </h1>
               <ul
                 tabIndex="0"
-                className="dropdown-content menu p-3 shadow bg-base-100 rounded-box w-44"
+                className="dropdown-content menu  shadow bg-base-100 rounded-md w-36"
               >
                 <li>
-                  <a>Login </a>
+                  <a><small> <FontAwesomeIcon icon={faArrowRightToBracket} /> Login</small> </a>
                 </li>
                 <li>
-                  <a>Create Account</a>
+                  <a> <small><FontAwesomeIcon icon={faUser}/>Create Account</small></a>
                 </li>
               </ul>
             </div>
@@ -172,7 +176,7 @@ const Navbar = () => {
         {/* all catagories product name center third navbar */}
         <nav className="flex items-center justify-center">
           <img
-            src={open ? { iconClose } : { iconHamburger }}
+            src={open ? iconClose : iconHamburger}
             className="md:hidden  fixed right-5 cursor-pointer z-20 top-10"
             onClick={() => steepen(!open)}
             alt="icon"
@@ -195,6 +199,7 @@ const Navbar = () => {
           </ul>
         </nav>
       </section>
+
     </React.Fragment>
   );
 };
