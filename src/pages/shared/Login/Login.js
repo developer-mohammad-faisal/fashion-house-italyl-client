@@ -57,7 +57,12 @@ const Login = () => {
                           </button>
                         </Link>
                       </div>
-
+                      <p class="text-sm font-semibold mb-2 pb-1">
+                        Don't have an account?
+                        <Link to="/register" class="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out">
+                          Register
+                        </Link>
+                      </p>
                       <button
                         type="submit"
                         className="inline-block px-7 py-3 bg-primary text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:primary hover:shadow-lg  active:shadow-lg transition duration-150 ease-in-out w-full"

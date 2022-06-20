@@ -4,8 +4,10 @@ import { faBagShopping, faEnvelope, faHeart, faPhone } from "@fortawesome/free-s
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../../assets/images/logo/logo.webp";
 import { Link } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
 
 const Navbar = () => {
+  const { logOut, user } = useAuth();
   return (
     <React.Fragment>
       <section>
@@ -28,12 +30,22 @@ const Navbar = () => {
                 </svg>
               </h1>
               <ul tabIndex="0" className="dropdown-content menu p-3 shadow bg-base-100 rounded-box w-44">
-                <li>
-                  <Link to="/login">Login </Link>
-                </li>
-                <li>
-                  <Link to="/register">Create Account</Link>
-                </li>
+                {user.displayName ? (
+                  <div>
+                    <li>
+                      <button onClick={logOut}>Logout</button>
+                    </li>
+                  </div>
+                ) : (
+                  <div>
+                    <li>
+                      <Link to="/login">Login </Link>
+                    </li>
+                    <li>
+                      <Link to="/register">Create Account</Link>
+                    </li>
+                  </div>
+                )}
               </ul>
             </div>
           </div>
