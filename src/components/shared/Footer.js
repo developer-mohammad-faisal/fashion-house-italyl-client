@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Footer = () => {
   return (
     <div>
-      <footer class="footer p-10 bg-base-200 text-base-content">
+      <footer className="footer p-10 bg-base-200 text-base-content">
         <div>
-          <span class=" text-2xl font-bold">Contact us</span>
+          <span className=" text-2xl font-bold">Contact us</span>
           <p>
             Dhendabor, Senanibas Savar,
             <br />
@@ -17,58 +17,75 @@ const Footer = () => {
             <FontAwesomeIcon icon={faPhone} /> <span>+8801998839126</span>
           </div>
           <div>
-            <FontAwesomeIcon icon={faEnvelope} />{" "}
-            <span className="hover:cursor-pointer hover:primary-300">
-              {" "}
-              fasion.house.italy@gmail.com{" "}
-            </span>
+            <FontAwesomeIcon icon={faEnvelope} /> <span className="hover:cursor-pointer hover:primary-300"> fasion.house.italy@gmail.com </span>
           </div>
         </div>
 
         <div>
-          <span class="text-2xl font-bold">Help</span>
-          <a href="facebook.com" className="hover:text-red-500">Contact us</a>
-          <a href="facebook.com" className="hover:text-red-500">Refund Policy</a>
-          <a href="facebook.com" className="hover:text-red-500">Privacy Policy</a>
-          <a href="facebook.com" className="hover:text-red-500">Terms od service</a>
-          <a href="facebook.com" className="hover:text-red-500">Information</a>
-        
+          <span className="text-2xl font-bold">Help</span>
+          <a href="facebook.com" className="hover:text-red-500">
+            Contact us
+          </a>
+          <a href="facebook.com" className="hover:text-red-500">
+            Refund Policy
+          </a>
+          <a href="facebook.com" className="hover:text-red-500">
+            Privacy Policy
+          </a>
+          <a href="facebook.com" className="hover:text-red-500">
+            Terms od service
+          </a>
+          <a href="facebook.com" className="hover:text-red-500">
+            Information
+          </a>
         </div>
         <div>
-          <span class="text-2xl font-bold">Support</span>
-          <a href="facebook.com" className="hover:text-red-500">Contact us</a>
-          <a href="facebook.com" className="hover:text-red-500">About us</a>
-          <a href="facebook.com" className="hover:text-red-500">Careers</a>
-          <a href="facebook.com" className="hover:text-red-500">Refund & Returns</a>
-          <a href="facebook.com" className="hover:text-red-500">Deliveries</a>
-          
+          <span className="text-2xl font-bold">Support</span>
+          <a href="facebook.com" className="hover:text-red-500">
+            Contact us
+          </a>
+          <a href="facebook.com" className="hover:text-red-500">
+            About us
+          </a>
+          <a href="facebook.com" className="hover:text-red-500">
+            Careers
+          </a>
+          <a href="facebook.com" className="hover:text-red-500">
+            Refund & Returns
+          </a>
+          <a href="facebook.com" className="hover:text-red-500">
+            Deliveries
+          </a>
         </div>
         <div>
-          <span class="text-2xl font-bold">Information</span>
-          <a href="facebook.com" className="hover:text-red-500">Search Terms</a>
-          <a href="facebook.com" className="hover:text-red-500">Advance Search</a>
-          <a href="facebook.com" className="hover:text-red-500">Help & Faq's</a>
-          <a href="facebook.com" className="hover:text-red-500">Store Location</a>
-          <a href="facebook.com" className="hover:text-red-500">Orders & Returns</a>
+          <span className="text-2xl font-bold">Information</span>
+          <a href="facebook.com" className="hover:text-red-500">
+            Search Terms
+          </a>
+          <a href="facebook.com" className="hover:text-red-500">
+            Advance Search
+          </a>
+          <a href="facebook.com" className="hover:text-red-500">
+            Help & Faq's
+          </a>
+          <a href="facebook.com" className="hover:text-red-500">
+            Store Location
+          </a>
+          <a href="facebook.com" className="hover:text-red-500">
+            Orders & Returns
+          </a>
         </div>
         <div>
-          <span class="text-2xl font-bold">Subscribe to our newsletter</span>
-          <div class="form-control w-80">
-            <label class="label">
-              <span class="label-text">A short sentence describing what someone will receive by subscribing</span>
+          <span className="text-2xl font-bold">Subscribe to our newsletter</span>
+          <div className="form-control w-80">
+            <label className="label">
+              <span className="label-text">A short sentence describing what someone will receive by subscribing</span>
             </label>
-            <div class="relative">
-              <input
-                type="text"
-                placeholder="Email address"
-                class="input input-bordered w-full pr-16"
-              />
-              <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">
-                Subscribe
-              </button>
+            <div className="relative">
+              <input type="text" placeholder="Email address" className="input input-bordered w-full pr-16" />
+              <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
               <div>
-              <span class=" text-2xl font-bold">Contact With us</span>
-
+                <span className=" text-2xl font-bold">Contact With us</span>
               </div>
             </div>
           </div>

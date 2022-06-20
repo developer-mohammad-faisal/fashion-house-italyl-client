@@ -3,6 +3,7 @@ import React from "react";
 import { faBagShopping, faEnvelope, faHeart, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../../assets/images/logo/logo.webp";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -28,10 +29,10 @@ const Navbar = () => {
               </h1>
               <ul tabIndex="0" className="dropdown-content menu p-3 shadow bg-base-100 rounded-box w-44">
                 <li>
-                  <a>Login </a>
+                  <Link to="/login">Login </Link>
                 </li>
                 <li>
-                  <a>Create Account</a>
+                  <Link to="/register">Create Account</Link>
                 </li>
               </ul>
             </div>

@@ -4,6 +4,7 @@ import Footer from "./components/shared/Footer";
 import Home from "./pages/Home/Home";
 import Login from "./pages/shared/Login/Login";
 import Navbar from "./pages/shared/Navbar/Navbar";
+import Register from "./pages/shared/Register/Register";
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
           </Routes>
-         <Footer></Footer>
+          <Footer></Footer>
         </BrowserRouter>
       </AuthProvider>
     </div>
