@@ -30,7 +30,6 @@ const Navbar = () => {
   return (
     <React.Fragment>
       <section>
-        
         {/*phone, email and My Account top navbar */}
         <div className="flex px-5 lg:px-10 justify-between  items-center">
           <div className="hidden lg:inline-flex gap-x-5">
@@ -38,10 +37,9 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faPhone} /> <span>+8801998839126</span>
             </div>
             <div>
-              <FontAwesomeIcon icon={faEnvelope} />{" "}
+              <FontAwesomeIcon icon={faEnvelope} />
               <span className="hover:cursor-pointer hover:primary-300">
-                {" "}
-                fasion.house.italy@gmail.com{" "}
+                fasion.house.italy@gmail.com
               </span>
             </div>
           </div>
@@ -64,10 +62,21 @@ const Navbar = () => {
                 className="dropdown-content menu  shadow bg-base-100 rounded-md w-36"
               >
                 <li>
-                  <a><small> <FontAwesomeIcon icon={faArrowRightToBracket} /> Login</small> </a>
+                  <a>
+                    <small>
+                      {" "}
+                      <FontAwesomeIcon icon={faArrowRightToBracket} /> Login
+                    </small>{" "}
+                  </a>
                 </li>
                 <li>
-                  <a> <small><FontAwesomeIcon icon={faUser}/>Create Account</small></a>
+                  <a>
+                    {" "}
+                    <small>
+                      <FontAwesomeIcon icon={faUser} />
+                      Create Account
+                    </small>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -141,7 +150,7 @@ const Navbar = () => {
           </div>
           <div className="navbar-end px-5 gap-x-4">
             <div className="text-3xl flex lg:hidden">
-            <button className="btn text-white text-3xl ml-2 btn-ghost btn-circle">
+              <button className="btn text-white text-3xl ml-2 btn-ghost btn-circle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-7 w-7"
@@ -199,7 +208,6 @@ const Navbar = () => {
           </ul>
         </nav>
       </section>
-
     </React.Fragment>
   );
 };
