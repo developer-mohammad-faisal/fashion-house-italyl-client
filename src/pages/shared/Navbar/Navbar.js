@@ -1,35 +1,17 @@
-/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
-import {
-  faArrowRightToBracket,
-  faBagShopping,
-  faEnvelope,
-  faHeart,
-  faPhone,
-  faRightFromBracket,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRightToBracket, faBagShopping, faEnvelope, faHeart, faPhone, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../../assets/images/logo/logo.webp";
 import iconClose from "../../../assets/images/icon/close.png";
 import iconHamburger from "../../../assets/images/icon/hamburger.png";
 import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
+import { menus } from "../../../StaticData/Menu";
 
 const Navbar = () => {
   let [open, steepen] = useState(false);
-  const menus = [
-    { name: "Home" },
-    { name: "Collection" },
-    { name: "Shop" },
-    { name: "Trendy Wear" },
-    { name: "Sandals" },
-    { name: "Accessories" },
-    { name: "Page" },
-  ];
-  
-const Navbar = () => {
   const { logOut, user } = useAuth();
   return (
     <React.Fragment>
@@ -42,29 +24,18 @@ const Navbar = () => {
             </div>
             <div>
               <FontAwesomeIcon icon={faEnvelope} />
-              <span className="hover:cursor-pointer hover:primary-300">
-                fasion.house.italy@gmail.com
-              </span>
+              <span className="hover:cursor-pointer hover:primary-300">fasion.house.italy@gmail.com</span>
             </div>
           </div>
           <div>
             <div className="dropdown hover:cursor-pointer dropdown-hover">
               <h1 className="flex justify-between items-center">
                 My Account
-                <svg
-                  className="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
+                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </h1>
-              <ul
-                tabIndex="0"
-                className="dropdown-content menu  shadow bg-base-100 rounded-md w-36"
-              >
+              <ul tabIndex="0" className="dropdown-content menu  shadow bg-base-100 rounded-md w-36">
                 <li>
                   <a>
                     <small>
@@ -82,6 +53,7 @@ const Navbar = () => {
                     </small>
                   </a>
                 </li>
+              </ul>
               <ul tabIndex="0" className="dropdown-content menu p-3 shadow bg-base-100 rounded-box w-44">
                 {user.displayName ? (
                   <div>
@@ -108,10 +80,7 @@ const Navbar = () => {
         <div className="navbar bg-black px-5 my-3 py-10 lg:py-6 lg:px-10">
           <div className="navbar-start">
             <div className="dropdown">
-              <ul
-                tabIndex="0"
-                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-              >
+              <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                 <select name="categories" id="categories" className="select">
                   <option value="All Categories" disabled selected>
                     All Categories
@@ -126,14 +95,13 @@ const Navbar = () => {
                 </select>
               </ul>
             </div>
-          
+
             <Link to="/home">
               <a className="btn btn-ghost normal-case text-xl">
                 {" "}
                 <img className="" src={logo} alt="" />{" "}
               </a>
             </Link>
-
           </div>
           <div className=" hidden lg:flex">
             <ul className="menu menu-horizontal p-0">
@@ -151,25 +119,10 @@ const Navbar = () => {
                   <option value="Jeans">Jeans</option>
                 </select>
               </div>
-              <input
-                type="text"
-                placeholder="Search.."
-                className="input input-group-lg ml-3"
-              />
+              <input type="text" placeholder="Search.." className="input input-group-lg ml-3" />
               <button className="btn text-white text-3xl ml-2 btn-ghost btn-circle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-7 w-7"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </button>
             </ul>
@@ -177,19 +130,8 @@ const Navbar = () => {
           <div className="navbar-end px-5 gap-x-4">
             <div className="text-3xl flex lg:hidden">
               <button className="btn text-white text-3xl ml-2 btn-ghost btn-circle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-7 w-7"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </button>
             </div>
@@ -197,13 +139,8 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faHeart} className="text-white " />
             </div>
             <div className="indicator text-3xl flex items-center">
-              <span className="indicator-item badge badge-secondary hover:text-white">
-                0
-              </span>
-              <FontAwesomeIcon
-                icon={faBagShopping}
-                className="text-white hover:text-primary duration-150 cursor-pointer"
-              />
+              <span className="indicator-item badge badge-secondary hover:text-white">0</span>
+              <FontAwesomeIcon icon={faBagShopping} className="text-white hover:text-primary duration-150 cursor-pointer" />
             </div>
           </div>
         </div>
@@ -226,9 +163,7 @@ const Navbar = () => {
                 key={index}
                 className="md:inline-block text-zinc-800  md:ml-6 lg:ml-10 ml-5 border-b-2 border-transparent hover:border-primary duration-300"
               >
-                <a className=" cursor-pointer text-md inline-block py-3">
-                  {menu.name}
-                </a>
+                <a className=" cursor-pointer text-md inline-block py-3">{menu.name}</a>
               </li>
             ))}
           </ul>
