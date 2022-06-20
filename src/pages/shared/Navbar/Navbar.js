@@ -16,6 +16,7 @@ const Navbar = () => {
   return (
     <React.Fragment>
       <section>
+        
         {/*phone, email and My Account top navbar */}
         <div className="flex px-5 lg:px-10 justify-between  items-center">
           <div className="hidden lg:inline-flex gap-x-5">
@@ -168,6 +169,7 @@ const Navbar = () => {
             ))}
           </ul>
         </nav>
+
       </section>
     </React.Fragment>
   );
