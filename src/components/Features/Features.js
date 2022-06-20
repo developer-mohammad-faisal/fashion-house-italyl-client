@@ -4,10 +4,10 @@ import { FeatureData } from "../../StaticData/ProductData";
 const Features = () => {
   return (
     <Fragment>
-      <section>
+      <section className="bg-white divide-y divide-dashed">
         {FeatureData.map((feature) => (
           <div key={feature.id}>
-            <div className="flex justify-center items-center gap-x-5 py-4" >
+            <div className="  flex justify-center items-center gap-x-5 py-4 " >
               <div className="hover:translate-x-2 duration-1000 cursor-pointer" >
                 <img src={feature.img} alt="logo" />
               </div>
