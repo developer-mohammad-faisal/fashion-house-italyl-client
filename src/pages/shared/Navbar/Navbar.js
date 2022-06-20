@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="flex px-5 lg:px-10 justify-between  items-center">
           <div className="hidden lg:inline-flex gap-x-5">
             <div>
-              <FontAwesomeIcon icon={faPhone} /> <span>+8801998839126</span>
+              <FontAwesomeIcon icon={faPhone} /> <span>+8801998839126ldkfa</span>
             </div>
             <div>
               <FontAwesomeIcon icon={faEnvelope} />
