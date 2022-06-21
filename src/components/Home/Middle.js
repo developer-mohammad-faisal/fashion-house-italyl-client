@@ -1,13 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Banner from "../Banner/Banner";
 
 const Middle = () => {
   return (
-    <div>
-      Middle content
+    <Fragment>
       <div>
-        <img src="/banner.png" alt="" />
+        {/* <Banner /> */}
       </div>
-    </div>
+    </Fragment>
   );
 };
 

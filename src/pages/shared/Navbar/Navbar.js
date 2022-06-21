@@ -148,7 +148,7 @@ const Navbar = () => {
               </div>
 
               <div>
-                <label for="my-drawer1">
+                <label htmlFor="my-drawer1">
                   <img
                     src={iconHamburger}
                     className={"h-7 lg:hidden"}
@@ -185,20 +185,20 @@ const Navbar = () => {
                   />
                 </span>
               </div>
-              <div class="relative">
-                <span class="absolute top-[-10px]  rounded-full h-5 w-5 text-sm text-center bg-primary right-[-6px] text-white">
+              <div className="relative">
+                <span className="absolute top-[-10px]  rounded-full h-5 w-5 text-sm text-center bg-primary right-[-6px] text-white">
                   0
                 </span>
-                <div class="dropdown dropdown-hover dropdown-end">
-                  <label tabindex="0" class="">
+                <div className="dropdown dropdown-hover dropdown-end">
+                  <label tabIndex="0" className="">
                     <FontAwesomeIcon
                       icon={faBagShopping}
                       className="text-white p-1 text-3xl hover:text-primary duration-150 cursor-pointer"
                     />
                   </label>
                   <ul
-                    tabindex="0"
-                    class="menu dropdown-content p-1 shadow font-semibold text-sm bg-base-100 w-64 lg:w-80 "
+                    tabIndex="0"
+                    className="menu dropdown-content p-1 shadow font-semibold text-sm bg-base-100 w-64 lg:w-80 "
                   >
                     <li className="">
                       <span className="flex items-center justify-center">
