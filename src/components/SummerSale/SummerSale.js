@@ -17,7 +17,7 @@ import {Pagination, Autoplay } from "swiper";
 const SummerSale = () => {
   return (
     <Fragment>
-     <section className="py-7" >
+     <section className="my-8 bg-white" >
      <Swiper
         slidesPerView={1}
         spaceBetween={30}

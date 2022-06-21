@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Categories from "../Categories/Categories";
 import SummerSale from "../SummerSale/SummerSale";
+import Testimonials from "../Testimonials/Testimonials";
 
 const Left = () => {
   return (
@@ -8,6 +9,7 @@ const Left = () => {
       <div>
         <Categories />
         <SummerSale/>
+        <Testimonials/>
       </div>
     </Fragment>
   );
