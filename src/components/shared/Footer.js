@@ -1,98 +1,176 @@
 import React from "react";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faPaperPlane,
+  faPhone,
+  faSearch,
+  faSeedling,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import img1 from "../../assets/images/icon/footerImg/img1 Small.png";
+import img2 from "../../assets/images/icon/footerImg/img2 Small.png";
+import img3 from "../../assets/images/icon/footerImg/img3 Small.png";
+import img4 from "../../assets/images/icon/footerImg/img4 Small.png";
+import fb from "../../assets/images/icon/footerImg/social-icon/fb.png";
+import insta from "../../assets/images/icon/footerImg/social-icon/insta.png";
+import linkedin from "../../assets/images/icon/footerImg/social-icon/linkedin.png";
+import twitter from "../../assets/images/icon/footerImg/social-icon/twitter.png";
 const Footer = () => {
   return (
-    <div className="container">
-      <footer className="footer  p-10 bg-base-200 text-base-content">
-        <div>
-          <span className=" text-2xl font-bold">Contact us</span>
-          <p>
-            Dhendabor, Senanibas Savar,
-            <br />
-            Dhaka, BD 1344
-          </p>
+    <div className="bg-base-200">
+      <footer className=" grid  gap-5 lg:gap-0 text-center md:text-left  grid-cols-1 md:grid-cols-3 lg:grid-cols-5 container  py-16  ">
+        <div className="font-sans ">
+          <h2 className=" text-xl font-bold">Contact us</h2>
+          <div className="text-[#848484] space-y-2 mt-4 text-[15px]">
+            <p>Dhendabor, Senanibas Savar,</p>
+            <p> Dhaka, BD 1344</p>
 
-          <div>
-            <FontAwesomeIcon icon={faPhone} /> <span>+8801998839126</span>
+            <div className="">
+              <FontAwesomeIcon icon={faPhone} /> <span>+8801998839126</span>
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faEnvelope} />{" "}
+              <span className="hover:cursor-pointer hover:primary-300">
+                {" "}
+                fasion.house.italy@gmail.com{" "}
+              </span>
+            </div>
           </div>
-          <div>
-            <FontAwesomeIcon icon={faEnvelope} /> <span className="hover:cursor-pointer hover:primary-300"> fasion.house.italy@gmail.com </span>
+          <div className="flex justify-center md:justify-start gap-2 mt-4">
+            <img
+              className="opacity-60 hover:opacity-100 transition-all duration-500 ease-in-out"
+              src={img1}
+              alt=""
+            />
+            <img
+              className="opacity-60 hover:opacity-100 transition-all duration-500 ease-in-out"
+              src={img2}
+              alt=""
+            />
+            <img
+              className="opacity-60 hover:opacity-100 transition-all duration-500 ease-in-out"
+              src={img3}
+              alt=""
+            />
+            <img
+              className="opacity-60 hover:opacity-100 transition-all duration-500 ease-in-out"
+              src={img4}
+              alt=""
+            />
           </div>
         </div>
 
         <div>
-          <span className="text-2xl font-bold">Help</span>
-          <a href="facebook.com" className="hover:text-red-500">
-            Contact us
-          </a>
-          <a href="facebook.com" className="hover:text-red-500">
-            Refund Policy
-          </a>
-          <a href="facebook.com" className="hover:text-red-500">
-            Privacy Policy
-          </a>
-          <a href="facebook.com" className="hover:text-red-500">
-            Terms od service
-          </a>
-          <a href="facebook.com" className="hover:text-red-500">
-            Information
-          </a>
+          <h2 className="text-xl font-bold">Help</h2>
+          <div className="mt-4 flex flex-col gap-3 text-[#848484] font-sans text-[15px]">
+            <a href="facebook.com" className="hover:text-red-500">
+              Contact us
+            </a>
+            <a href="facebook.com" className="hover:text-red-500">
+              Refund Policy
+            </a>
+            <a href="facebook.com" className="hover:text-red-500">
+              Privacy Policy
+            </a>
+            <a href="facebook.com" className="hover:text-red-500">
+              Terms od service
+            </a>
+            <a href="facebook.com" className="hover:text-red-500">
+              Information
+            </a>
+          </div>
         </div>
         <div>
-          <span className="text-2xl font-bold">Support</span>
-          <a href="facebook.com" className="hover:text-red-500">
-            Contact us
-          </a>
-          <a href="facebook.com" className="hover:text-red-500">
-            About us
-          </a>
-          <a href="facebook.com" className="hover:text-red-500">
-            Careers
-          </a>
-          <a href="facebook.com" className="hover:text-red-500">
-            Refund & Returns
-          </a>
-          <a href="facebook.com" className="hover:text-red-500">
-            Deliveries
-          </a>
+          <h2 className="text-xl font-bold">Support</h2>
+          <div className="mt-4 flex flex-col gap-3 text-[#848484] font-sans text-[15px]">
+            <a href="facebook.com" className="hover:text-red-500">
+              Contact us
+            </a>
+            <a href="facebook.com" className="hover:text-red-500">
+              About us
+            </a>
+            <a href="facebook.com" className="hover:text-red-500">
+              Careers
+            </a>
+            <a href="facebook.com" className="hover:text-red-500">
+              Refund & Returns
+            </a>
+            <a href="facebook.com" className="hover:text-red-500">
+              Deliveries
+            </a>
+          </div>
         </div>
         <div>
-          <span className="text-2xl font-bold">Information</span>
-          <a href="facebook.com" className="hover:text-red-500">
-            Search Terms
-          </a>
-          <a href="facebook.com" className="hover:text-red-500">
-            Advance Search
-          </a>
-          <a href="facebook.com" className="hover:text-red-500">
-            Help & Faq's
-          </a>
-          <a href="facebook.com" className="hover:text-red-500">
-            Store Location
-          </a>
-          <a href="facebook.com" className="hover:text-red-500">
-            Orders & Returns
-          </a>
+          <h2 className="text-xl font-bold">Information</h2>
+          <div className="mt-4 flex flex-col gap-3 text-[#848484] font-sans text-[15px]">
+            <a href="facebook.com" className="hover:text-red-500">
+              Search Terms
+            </a>
+            <a href="facebook.com" className="hover:text-red-500">
+              Advance Search
+            </a>
+            <a href="facebook.com" className="hover:text-red-500">
+              Help & Faq's
+            </a>
+            <a href="facebook.com" className="hover:text-red-500">
+              Store Location
+            </a>
+            <a href="facebook.com" className="hover:text-red-500">
+              Orders & Returns
+            </a>
+          </div>
         </div>
-        {/* <div>
-          <span className="text-2xl font-bold">Subscribe to our newsletter</span>
-          <div className="form-control w-80">
-            <label className="label">
-              <span className="label-text">A short sentence describing what someone will receive by subscribing</span>
+        <div>
+          <span className="text-xl font-bold">Subscribe our newsletter</span>
+          <div className="form-control  mt-4 flex flex-col gap-3 text-[#848484] font-sans text-[15px]">
+            <label className="label p-0">
+              <span className="label-text text-[#848484] text-[15px] leading-6">
+                A short sentence describing what someone will receive by
+                subscribing
+              </span>
             </label>
-            <div className="relative">
-              <input type="text" placeholder="Email address" className="input input-bordered w-full pr-16" />
-              <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
-              <div>
-                <span className=" text-2xl font-bold">Contact With us</span>
+            <div className="flex my-3 items-center justify-start">
+              <input
+                type="text"
+                placeholder="Email address"
+                className="h-[45px] pl-3 w-full placeholder:text-[13px] focus:outline-none"
+              />
+              <button className=" text-white cursor-pointer  h-[45px]  px-4 flex items-center bg-black  ">
+                <FontAwesomeIcon icon={faPaperPlane} className=" " />
+              </button>
+            </div>
+            <div>
+              <h1 className=" text-xl text-black font-bold">Contact With us</h1>
+              <div className="flex justify-center md:justify-start items-center gap-5 mt-3">
+                <img
+                  className=" opacity-50 hover:opacity-100 transition-all duration-500 ease-in-out h-5"
+                  src={fb}
+                  alt=""
+                />
+                <img
+                  className=" opacity-50 hover:opacity-100 transition-all duration-500 ease-in-out h-7"
+                  src={linkedin}
+                  alt=""
+                />
+                <img
+                  className=" opacity-50 hover:opacity-100 transition-all duration-500 ease-in-out h-6"
+                  src={twitter}
+                  alt=""
+                />
+                <img
+                  className=" opacity-50 hover:opacity-100 transition-all duration-500 ease-in-out h-6"
+                  src={insta}
+                  alt=""
+                />
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </footer>
       <div>
-        <h1 className="bg-black text-white text-center h-16">Copyright © 2022, Mabel-Fashion Powered by Shopify Powered by Shopify</h1>
+        <h1 className="bg-black text-white text-center py-3 text-[15px] font-sans">
+          Copyright © 2022, Mabel-Fashion Powered by Shopify Powered by Shopify
+        </h1>
       </div>
     </div>
   );

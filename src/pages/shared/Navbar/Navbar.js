@@ -112,7 +112,7 @@ const Navbar = () => {
                 </div>
               </Link>
             </div>
-            <div className="flex items-center gap-x-10 mt-2">
+            <div className="flex items-center gap-x-10 mt-2 lg:mt-0">
               <div className=" hidden  lg:flex text-white ">
                 <ul className="menu menu-horizontal p-0 ">
                   <div>
@@ -222,7 +222,7 @@ const Navbar = () => {
           </p>
           {/* <img src={open ? iconClose : iconHamburger} alt="icon" /> */}
           <ul
-            className={`bg-white lg:shadow-sm  backdrop-blur-md pl-10 pr-10 lg:static fixed duration-500 ease-linear  top-0 pt-16  lg:h-auto h-screen flex flex-col lg:flex-row justify-start lg:justify-center gap-5 lg:gap-8  z-10 py-[15px] ${
+            className={`bg-white lg:shadow-sm  backdrop-blur-md pl-10 pr-10 lg:static fixed duration-500 ease-linear  top-0   lg:h-auto h-screen flex flex-col lg:flex-row justify-start lg:justify-center gap-5 lg:gap-8  z-10 py-[15px] ${
               !open ? "right-[-100%]" : "right-0"
             }`}
           >
