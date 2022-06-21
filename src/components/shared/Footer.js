@@ -3,8 +3,8 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Footer = () => {
   return (
-    <div>
-      <footer className="footer p-10 bg-base-200 text-base-content">
+    <div className="container">
+      <footer className="footer  p-10 bg-base-200 text-base-content">
         <div>
           <span className=" text-2xl font-bold">Contact us</span>
           <p>
@@ -75,7 +75,7 @@ const Footer = () => {
             Orders & Returns
           </a>
         </div>
-        <div>
+        {/* <div>
           <span className="text-2xl font-bold">Subscribe to our newsletter</span>
           <div className="form-control w-80">
             <label className="label">
@@ -89,7 +89,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </footer>
       <div>
         <h1 className="bg-black text-white text-center h-16">Copyright © 2022, Mabel-Fashion Powered by Shopify Powered by Shopify</h1>
