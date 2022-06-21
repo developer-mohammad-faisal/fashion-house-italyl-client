@@ -8,7 +8,7 @@ const ModernFashion = () => {
   return (
     <Fragment>
       <section className="py-10 grid md:grid-cols-1 lg:grid-cols-2 gap-2" >
-        <div className="flex items-center gap-0 lg:gap-5" >
+        <div className="flex items-center gap-3 lg:gap-5" >
           <div className="w-[50%]" >
             <img src={handbags} alt="" />
           </div>
@@ -23,7 +23,7 @@ const ModernFashion = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-0 lg:gap-5">
+        <div className="flex items-center gap-3 lg:gap-5">
           <div className="w-[50%]" >
             <img src={clothes} alt="" />
           </div>
