@@ -9,7 +9,7 @@ import fashion from "../../assets/images/flashSale/fashion.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import "../../styles/components/Summer.css";
+import "../../styles/components/swiperSlider.css";
 
 // import required modules
 import {Pagination, Autoplay } from "swiper";
@@ -21,7 +21,9 @@ const SummerSale = () => {
      <Swiper
         slidesPerView={1}
         spaceBetween={30}
-        pagination={true}
+        pagination={{
+          clickable: true,
+        }}
         loop={true}
         autoplay={{
           delay: 2000,
