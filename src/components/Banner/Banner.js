@@ -15,9 +15,7 @@ const Banner = () => {
   return (
     <Fragment>
 
-          <h1 className="text-4xl text-center" >Banner</h1>
-
-      {/* <Swiper
+      <Swiper
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
@@ -34,7 +32,7 @@ const Banner = () => {
           <SwiperSlide>2</SwiperSlide>
           <SwiperSlide>3</SwiperSlide>
 
-      </Swiper> */}
+      </Swiper>
     </Fragment>
   );
 };
