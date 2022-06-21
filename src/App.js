@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import Login from "./pages/shared/Login/Login";
 import Navbar from "./pages/shared/Navbar/Navbar";
 import Register from "./pages/shared/Register/Register";
+import BrandInfo from "./components/shared/BrandInfo";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
           </Routes>
+          <BrandInfo/>
           <Footer></Footer>
         </BrowserRouter>
       </AuthProvider>
