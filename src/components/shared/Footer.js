@@ -18,7 +18,7 @@ import twitter from "../../assets/images/icon/footerImg/social-icon/twitter.png"
 const Footer = () => {
   return (
     <div className="bg-base-200">
-      <footer className=" grid  gap-5 text-center md:text-left  grid-cols-1 md:grid-cols-3 lg:grid-cols-5 container  py-16  ">
+      <footer className=" grid  gap-5 lg:gap-0 text-center md:text-left  grid-cols-1 md:grid-cols-3 lg:grid-cols-5 container  py-16  ">
         <div className="font-sans ">
           <h2 className=" text-xl font-bold">Contact us</h2>
           <div className="text-[#848484] space-y-2 mt-4 text-[15px]">
@@ -133,7 +133,7 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="Email address"
-                className="h-[45px] pl-3 w-full md:w-60 focus:outline-none"
+                className="h-[45px] pl-3 w-full placeholder:text-[13px] focus:outline-none"
               />
               <button className=" text-white cursor-pointer  h-[45px]  px-4 flex items-center bg-black  ">
                 <FontAwesomeIcon icon={faPaperPlane} className=" " />
@@ -168,7 +168,7 @@ const Footer = () => {
         </div>
       </footer>
       <div>
-        <h1 className="bg-black text-white text-center py-4 text-[15px] font-sans">
+        <h1 className="bg-black text-white text-center py-3 text-[15px] font-sans">
           Copyright © 2022, Mabel-Fashion Powered by Shopify Powered by Shopify
         </h1>
       </div>
