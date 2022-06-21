@@ -5,7 +5,7 @@ const Middle = () => {
   return (
     <Fragment>
       <div>
-        <Banner />
+        {/* <Banner /> */}
       </div>
     </Fragment>
   );

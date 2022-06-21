@@ -53,7 +53,7 @@ const Login = () => {
                           />
                           <label
                             className="form-check-label inline-block text-gray-800"
-                            htmlFor="exampleCheck2"
+                            htmlhtmlFor="exampleCheck2"
                           >
                             Remember me
                           </label>
@@ -64,11 +64,11 @@ const Login = () => {
                           </button>
                         </Link>
                       </div>
-                      <p class="text-sm font-semibold mb-2 pb-1">
+                      <p className="text-sm font-semibold mb-2 pb-1">
                         Don't have an account?
                         <Link
                           to="/register"
-                          class="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out"
+                          className="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out"
                         >
                           Register
                         </Link>

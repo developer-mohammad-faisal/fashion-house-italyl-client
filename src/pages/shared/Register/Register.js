@@ -12,7 +12,11 @@ const Register = () => {
                 <div className="w-full px-4 md:px-0">
                   <div className="md:p-6 md:mx-2">
                     <div className="text-center">
-                      <img className="mx-auto w-48" src="https://i.ibb.co/Pr5HW5P/download-removebg-preview.png" alt="logo" />
+                      <img
+                        className="mx-auto w-48"
+                        src="https://i.ibb.co/Pr5HW5P/download-removebg-preview.png"
+                        alt="logo"
+                      />
                     </div>
                     <form>
                       <p className="mb-4">Create your account</p>
@@ -52,9 +56,12 @@ const Register = () => {
                           placeholder="Confirm Password"
                         />
                       </div>
-                      <p class="text-sm font-semibold mb-2 pb-1">
+                      <p className="text-sm font-semibold mb-2 pb-1">
                         Already have an account?
-                        <Link to="/login" class="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out">
+                        <Link
+                          to="/login"
+                          className="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out"
+                        >
                           Sign in
                         </Link>
                       </p>
