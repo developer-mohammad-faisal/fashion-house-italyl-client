@@ -1,9 +1,10 @@
 import React, { Fragment } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+// icon
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPause } from "@fortawesome/free-solid-svg-icons";
-// banner image
+// slider image
 import Jerrell from "../../assets/images/testimonials/jerrell.webp";
 import Emmaline from "../../assets/images/testimonials/Emmaline.webp";
 
@@ -20,7 +21,7 @@ const Testimonials = () => {
   return (
     <Fragment>
       <section className="my-8 bg-white">
-        <div className="pl-3 pb-2">
+        <div className="pl-3 py-5">
           <h1 className="text-xl font-bold border-b-2 w-16 border-stone-800">
             {" "}
             Testimonials
