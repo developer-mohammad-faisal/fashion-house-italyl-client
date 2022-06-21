@@ -72,19 +72,19 @@ export const BestSellerData = [
     price: 400.00
   },
   {
-    id: 1,
+    id: 2,
     img: 'https://i.ibb.co/Dgf6V2K/accessories.webp',
     name: 'Belt & Accessories',
     price: 529.00
   },
   {
-    id: 1,
+    id: 3,
     img: 'https://i.ibb.co/34xfMzR/handbag.webp',
     name: 'Cross Body Handbag',
     price: 352.00
   },
   {
-    id: 1,
+    id: 4,
     img: 'https://i.ibb.co/f1Wfn8y/handbags.webp',
     name: 'Shoulder Strap Handbag',
     price: 428.00
