@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonRight from "../ButtonRight/ButtonRight";
 import BestSellers from "../BestSellers/BestSellers";
 import ComboOffer from "../ComboOffer/ComboOffer";
 import Features from "../Features/Features";
@@ -8,6 +9,7 @@ const Right = () => {
   return (
     <div>
         <Features/>
+        <ButtonRight></ButtonRight>
         <ComboOffer/>
         <BestSellers/>
         <OurClients/>
