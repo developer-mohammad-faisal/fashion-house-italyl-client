@@ -4,7 +4,7 @@ import { FeaturedPost } from "../../StaticData/LeftProduct";
 const FeaturedPosts = () => {
   return (
     <Fragment>
-      <section className="bg-white divide-y divide-dashed p-3">
+      <section className="bg-white divide-y divide-dashed p-3 mt-8">
         <h1 className=" text-xl font-bold ">Featured Posts</h1>
         {FeaturedPost.map((product) => (
           <div key={product.id}>
@@ -13,7 +13,7 @@ const FeaturedPosts = () => {
                 <img src={product.img} alt="logo" />
               </div>
               <div>
-              <h3 className="text-black"> {product.date}</h3>
+              <h3 className=" font-sans	"> {product.date}</h3>
                 <h1 className="text-md font-bold hover:text-primary">
                   {product.name}
                 </h1>
