@@ -24,3 +24,34 @@ export const LeftProduct = [
     price: 0.0,
   },
 ];
+
+
+// ...................................FeaturedPosts..............
+export const FeaturedPost = [
+    {
+      id: 1,
+      img: "https://i.ibb.co/7XYZSRd/7-large.webp",
+      name: "Lace mini skater dress",
+      date: 'May 30,2021',
+    },
+    {
+      id: 2,
+      img: "https://i.ibb.co/b2CHtpj/8-large.webp",
+      name: "Black flare high heel",
+      date: 'May 30,2021',
+    },
+    {
+      id: 3,
+      img: "https://i.ibb.co/D7t7cMX/9-large.webp",
+      name: "Turtle neck with stockings",
+      date: 'May 30,2021',
+    },
+    {
+      id: 4,
+      img: "https://i.ibb.co/sJv1VSX/10-49b57de7-8bd0-47ec-8ecc-73fb32d4f647-large.webp",
+      name: "Knee cut white jeans",
+      date: 'May 30,2021',
+    },
+  ];
+
+
