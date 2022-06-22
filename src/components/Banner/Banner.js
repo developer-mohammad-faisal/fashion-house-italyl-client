@@ -18,6 +18,7 @@ import { Navigation } from "swiper";
 const Banner = () => {
   return (
     <div>
+      {/* swiper js code  */}
       <>
         <Swiper
           navigation={true}
