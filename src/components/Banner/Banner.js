@@ -1,3 +1,4 @@
+
 import React, { Fragment } from "react";
 
 // banner image
@@ -11,26 +12,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/bundle";
 
 // import required modules
 import { Navigation } from "swiper";
-
 const Banner = () => {
   return (
-    <div>
-     {/* hello */}
+    <div className=" h-[250px] w-full md:h-[425px] mb-10 ">
+      {/* hello */}
       <>
-        <Swiper
-          navigation={true}
-          modules={[Navigation]}
-          // className="mySwiper h-[250px] md:h-[425px] mb-10"
-          className="mySwiper w-full h-[250px] md:h-96  mb-10"
-        >
+        <Swiper navigation={true} modules={[Navigation]} className="mySwiper ">
           {" "}
           <SwiperSlide>
             <div
               style={{ backgroundImage: `url(${accesories})` }}
-              className="bg-no-repeat bg-contain w-full  "
+              className="bg-no-repeat bg-cover  bg-center w-full   h-full "
             >
               <div className="pl-0 md:pl-16 w-full md:w-1/2 md:bg-transparent bg-[#e0e2ebad]  flex items-center md:items-start justify-center h-full flex-col ">
                 <h1 className="text-lg md:text-2xl text-gray-700">
@@ -53,7 +49,7 @@ const Banner = () => {
           <SwiperSlide>
             <div
               style={{ backgroundImage: `url(${fashion})` }}
-              className="bg-no-repeat h-full w-full bg-cover"
+              className="bg-no-repeat bg-cover bg-center w-full   h-full"
             >
               <div className="flex h-full">
                 <div className="w-1/2 hidden md:block"></div>
@@ -78,7 +74,7 @@ const Banner = () => {
           <SwiperSlide>
             <div
               style={{ backgroundImage: `url(${clothings})` }}
-              className="bg-no-repeat h-full w-full bg-cover bg-center  "
+              className="bg-no-repeat bg-cover  bg-center bg-origin-padding w-full   h-full "
             >
               <div className="pl-0 md:pl-16 w-full md:w-1/2 md:bg-transparent bg-[#e0e2ebad]  flex items-center md:items-start justify-center h-full flex-col ">
                 <h1 className="text-lg md:text-2xl text-gray-700">

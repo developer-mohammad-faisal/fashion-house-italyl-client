@@ -12,6 +12,7 @@ const Middle = () => {
         <FlashSale/>
         <LookStyle/>
         <ModernFashion/>
+
       </div>
     </Fragment>
   );
