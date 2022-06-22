@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 // banner image
 import clothings from "../../assets/images/banner/banner2.webp";
