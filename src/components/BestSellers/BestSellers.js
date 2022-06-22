@@ -16,17 +16,11 @@ const BestSellers = () => {
   return (
     <Fragment>
       <section className="my-8 bg-white">
-        <div className="w-[115px] pl-3 py-5">
-          <h1 className="text-[18px] font-bold border-b-2 border-stone-800">
-            {" "}
-            Best Sellers
-          </h1>
+        <div className=" pl-3 py-5">
+          <h1 className="text-[18px] font-bold "> Best Sellers</h1>
+          <div className="w-20 h-[2px] bg-black"></div>
         </div>
-        <Swiper
-          navigation={true}
-          modules={[Navigation]}
-          className="mySwiper"
-        >
+        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
           {BestSellerData.map((product) => (
             <SwiperSlide key={product.id}>
               <div className="cursor-pointer text-center">

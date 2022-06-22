@@ -22,10 +22,11 @@ const Testimonials = () => {
     <Fragment>
       <section className="my-8 bg-white">
         <div className="pl-3 py-5">
-          <h1 className="text-xl font-bold border-b-2 w-16 border-stone-800">
+          <h1 className="text-xl font-bold ">
             {" "}
             Testimonials
           </h1>
+          <div className="w-20 h-[2px] bg-black"></div>
         </div>
         <Swiper
           slidesPerView={1}
@@ -40,7 +41,7 @@ const Testimonials = () => {
           <SwiperSlide>
             <div className="cursor-pointer text-center">
               <div>
-                <img className="rounded-full " src={Jerrell} alt="" />
+                <img className="rounded-full block mx-auto " src={Jerrell} alt="" />
               </div>
               <div className="py-5">
                 <h1 className="font-semibold text-[15px]">Foot Wear</h1>
@@ -59,7 +60,7 @@ const Testimonials = () => {
           <SwiperSlide>
             <div className="cursor-pointer text-center">
               <div>
-                <img className="rounded-full" src={Emmaline} alt="" />
+                <img className="rounded-full  block mx-auto " src={Emmaline} alt="" />
               </div>
               <div className="py-5">
                 <h1 className="font-semibold text-[15px]">Elegant Bags</h1>

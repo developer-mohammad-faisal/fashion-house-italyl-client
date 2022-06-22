@@ -9,10 +9,10 @@ const Right = () => {
   return (
     <div>
         <Features/>
-        <ButtonRight></ButtonRight>
         <ComboOffer/>
         <BestSellers/>
         <OurClients/>
+        <ButtonRight/>
     </div>
   );
 };
