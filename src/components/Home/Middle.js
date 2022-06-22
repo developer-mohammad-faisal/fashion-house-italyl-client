@@ -8,7 +8,7 @@ const Middle = () => {
   return (
     <Fragment>
       <div>
-        {/* <Banner /> */}
+        <Banner />
         <FlashSale/>
         <LookStyle/>
         <ModernFashion/>
