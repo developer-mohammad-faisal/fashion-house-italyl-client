@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import '../../styles/components/LookStyle.css'
+import '../../../styles/components/LookStyle.css'
 
 const LookStyle = () => {
   return (

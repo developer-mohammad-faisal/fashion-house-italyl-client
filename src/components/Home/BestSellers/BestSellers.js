@@ -6,11 +6,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import "../../styles/components/swiperSlider.css";
+import "../../../styles/components/swiperSlider.css";
 
 // import required modules
 import { Navigation } from "swiper";
-import { BestSellerData } from "../../StaticData/ProductData";
+import { BestSellerData } from "../../../StaticData/ProductData";
 
 const BestSellers = () => {
   return (

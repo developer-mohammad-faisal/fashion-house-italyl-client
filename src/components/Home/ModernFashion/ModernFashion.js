@@ -1,8 +1,8 @@
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Fragment } from "react";
-import handbags from '../../assets/images/flashSale/sale4.jpg'
-import clothes from '../../assets/images/flashSale/sale5.jpg'
+import handbags from '../../../assets/images/flashSale/sale4.jpg'
+import clothes from '../../../assets/images/flashSale/sale5.jpg'
 
 const ModernFashion = () => {
   return (

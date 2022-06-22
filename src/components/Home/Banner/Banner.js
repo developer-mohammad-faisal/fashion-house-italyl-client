@@ -1,9 +1,9 @@
 import React from "react";
 
 // banner image
-import clothings from "../../assets/images/banner/banner2.webp";
-import fashion from "../../assets/images/banner/banner1.webp";
-import accesories from "../../assets/images/banner/banner3.webp";
+import clothings from "../../../assets/images/banner/banner1.webp";
+import fashion from "../../../assets/images/banner/banner1.webp";
+import accesories from "../../../assets/images/banner/banner3.webp";
 // swiper js code
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
