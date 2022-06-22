@@ -63,3 +63,30 @@ export const FeatureData = [ {
   },
 ]
 
+// Best Seller 
+export const BestSellerData = [
+  {
+    id: 1,
+    img: 'https://i.ibb.co/FqdZC2S/combo.webp',
+    name: 'Jeans & Sweater Combo',
+    price: 400.00
+  },
+  {
+    id: 2,
+    img: 'https://i.ibb.co/Dgf6V2K/accessories.webp',
+    name: 'Belt & Accessories',
+    price: 529.00
+  },
+  {
+    id: 3,
+    img: 'https://i.ibb.co/34xfMzR/handbag.webp',
+    name: 'Cross Body Handbag',
+    price: 352.00
+  },
+  {
+    id: 4,
+    img: 'https://i.ibb.co/f1Wfn8y/handbags.webp',
+    name: 'Shoulder Strap Handbag',
+    price: 428.00
+  },
+]
