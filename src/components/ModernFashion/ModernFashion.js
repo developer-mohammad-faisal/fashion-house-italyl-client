@@ -35,7 +35,7 @@ const ModernFashion = () => {
               <li className="py-[2px] hover:text-primary "> <FontAwesomeIcon icon={faAngleRight} /> JABRA</li>
               <li className="py-[2px] hover:text-primary "> <FontAwesomeIcon icon={faAngleRight} /> KUCHIPOO</li>
               <li className="py-[2px] hover:text-primary "> <FontAwesomeIcon icon={faAngleRight} /> LUKE & LILLY</li>
-              <li className="py-[2px] hover:text-primary "> <FontAwesomeIcon icon={faAngleRight} /> LUKE & LILLY</li>
+              <li className="py-[2px] hover:text-primary "> <FontAwesomeIcon icon={faAngleRight} /> LIBERTY</li>
             </ul>
           </div>
         </div>
