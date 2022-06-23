@@ -1,18 +1,16 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  
   faPaperPlane,
   faEnvelope,
   faPhone,
-  faTimesRectangle
-  
-  
+  faTimesRectangle,
 } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
+import GoogleMap from "./GoogleMap";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="container mx-auto">
       <div className="bg-base-200 p-10">
         <h1 className="text-3xl text-center font-sans">Contact Us</h1>
         <p className="text-center mt-4 font-sans">
@@ -49,6 +47,12 @@ const Contact = () => {
           <p className="uppercase font-bold mt-5">TIMING</p>
           <p className="font-sans">available at 10am-8pm</p>
         </div>
+      </div>
+      <div className="lg:mb-80 mb-[500px] mr-[200px]">
+        <GoogleMap></GoogleMap>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cupiditate architecto alias officia voluptate, delectus, reiciendis non corrupti dolores exercitationem incidunt culpa. Ullam mollitia unde explicabo voluptatibus perspiciatis veritatis omnis?</p>
       </div>
     </div>
   );

@@ -7,7 +7,6 @@ import Navbar from "./pages/shared/Navbar/Navbar";
 import Register from "./pages/shared/Register/Register";
 import BrandInfo from "./components/shared/BrandInfo";
 
-import ContactUs from "./components/ContactUs/ContactUs";
 
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
@@ -28,7 +27,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
 
-            <Route path="/contact" element={<ContactUs />} />
+            
 
             <Route path="*" element={<NotFoundError />} />
 
