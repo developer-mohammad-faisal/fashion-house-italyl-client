@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
-import sale1 from "../../assets/images/flashSale/sale1.jpg";
-import sale3 from "../../assets/images/flashSale/sale2.webp";
-import sale2 from "../../assets/images/flashSale/sale3.jpg";
+import sale1 from "../../../assets/images/flashSale/sale1.jpg";
+import sale3 from "../../../assets/images/flashSale/sale2.webp";
+import sale2 from "../../../assets/images/flashSale/sale3.jpg";
 
 const FlashSale = () => {
   return (

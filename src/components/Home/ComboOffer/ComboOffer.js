@@ -2,14 +2,14 @@ import React, { Fragment } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // banner image
-import shoes from "../../assets/images/flashSale/shoes.jpg";
-import bags from "../../assets/images/flashSale/bags.jpg";
+import shoes from "../../../assets/images/flashSale/shoes.jpg";
+import bags from "../../../assets/images/flashSale/bags.jpg";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
-import "../../styles/components/swiperSlider.css";
+import "../../../styles/components/swiperSlider.css";
 
 // import required modules
 import { Pagination, Autoplay } from "swiper";

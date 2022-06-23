@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import "../../styles/components/Categories.css";
+import "../../../styles/components/Categories.css";
 
 const Categories = () => {
   return (

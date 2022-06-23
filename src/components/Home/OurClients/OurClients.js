@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
-import client1 from "../../assets/images/ourClients/client1.webp";
-import client2 from "../../assets/images/ourClients/client2.webp";
-import client3 from "../../assets/images/ourClients/client3.webp";
-import client4 from "../../assets/images/ourClients/client4.webp";
-import client5 from "../../assets/images/ourClients/client5.webp";
-import client6 from "../../assets/images/ourClients/client6.webp";
+import client1 from "../../../assets/images/ourClients/client1.webp";
+import client2 from "../../../assets/images/ourClients/client2.webp";
+import client3 from "../../../assets/images/ourClients/client3.webp";
+import client4 from "../../../assets/images/ourClients/client4.webp";
+import client5 from "../../../assets/images/ourClients/client5.webp";
+import client6 from "../../../assets/images/ourClients/client6.webp";
 
 const OurClients = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { FeaturedPost } from "../../StaticData/LeftProduct";
+import { FeaturedPost } from "../../../StaticData/LeftProduct";
 
 const FeaturedPosts = () => {
   return (

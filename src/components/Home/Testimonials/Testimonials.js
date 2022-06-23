@@ -5,14 +5,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPause } from "@fortawesome/free-solid-svg-icons";
 // slider image
-import Jerrell from "../../assets/images/testimonials/jerrell.webp";
-import Emmaline from "../../assets/images/testimonials/Emmaline.webp";
+import Jerrell from "../../../assets/images/testimonials/jerrell.webp";
+import Emmaline from "../../../assets/images/testimonials/Emmaline.webp";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
-import "../../styles/components/swiperSlider.css";
+import "../../../styles/components/swiperSlider.css";
 
 // import required modules
 import { Pagination } from "swiper";
