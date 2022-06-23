@@ -1,22 +1,13 @@
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Fragment } from "react";
-<<<<<<< HEAD:src/components/ModernFashion/ModernFashion.js
-import handbags from "../../assets/images/flashSale/sale4.jpg";
-import clothes from "../../assets/images/flashSale/sale5.jpg";
-=======
-import handbags from '../../../assets/images/flashSale/sale4.jpg'
-import clothes from '../../../assets/images/flashSale/sale5.jpg'
->>>>>>> 1f7b9c9f30f19ab94c5e7458a0292bddeee5baa8:src/components/Home/ModernFashion/ModernFashion.js
+import handbags from "../../../assets/images/flashSale/sale4.jpg";
+import clothes from "../../../assets/images/flashSale/sale5.jpg";
 
 const ModernFashion = () => {
   return (
     <Fragment>
-      <section
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        className="py-10 grid md:grid-cols-1 lg:grid-cols-2 gap-2 px-2"
-      >
+      <section data-aos="fade-up" data-aos-duration="2000" className="py-10 grid md:grid-cols-1 lg:grid-cols-2 gap-2 px-2">
         <div className="flex items-start gap-0 lg:gap-5 bg-white p-3 rounded">
           <div className="w-[50%] mr-2 ">
             <img src={handbags} alt="" />
