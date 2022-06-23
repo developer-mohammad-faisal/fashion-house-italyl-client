@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import "./styles/main.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthProvider from "./context/AuthProvider";
 import Footer from "./components/shared/Footer";
@@ -10,16 +11,14 @@ import BrandInfo from "./components/shared/BrandInfo";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
 import NotFoundError from "./pages/NotFoundError/NotFoundError";
-
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 
 function App() {
-
-  useEffect( () => {
+  useEffect(() => {
     AOS.init();
-  }, [])
-  
+  }, []);
+
   return (
     <div>
       <AuthProvider>
@@ -33,7 +32,6 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="*" element={<NotFoundError />} />
-
           </Routes>
           <BrandInfo />
           <Footer></Footer>
