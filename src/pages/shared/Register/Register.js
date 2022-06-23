@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Register = () => {
   return (
     <section className="h-auto gradient-form bg-gray-200 md:h-auto">
-      <div className="container mx-auto py-20 px-2 w-[400px]">
+      <div className="container mx-auto py-20 px-2 w-full md:w-[400px] lg:w-[400px]">
         <div className="flex justify-center items-center h-full g-6 text-gray-800">
           <div className="w-full">
             <div className="block bg-white shadow-lg rounded-lg">
@@ -13,7 +13,7 @@ const Register = () => {
                   <div className="md:p-6 md:mx-2">
                     <div className="text-center">
                       <img
-                        className="mx-auto w-48"
+                        className="mx-auto w-36"
                         src="https://i.ibb.co/Pr5HW5P/download-removebg-preview.png"
                         alt="logo"
                       />
@@ -67,7 +67,7 @@ const Register = () => {
                       </p>
                       <button
                         type="submit"
-                        className="inline-block px-7 py-3 bg-primary text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:primary hover:shadow-lg  active:shadow-lg transition duration-150 ease-in-out w-full"
+                        className="inline-block px-7 py-3 bg-primary text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:primary hover:shadow-lg mb-8 lg:mb-0  active:shadow-lg transition duration-150 ease-in-out w-full"
                         data-mdb-ripple="true"
                         data-mdb-ripple-color="light"
                       >
