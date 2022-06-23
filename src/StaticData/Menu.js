@@ -5,4 +5,5 @@ export const menus = [
   { name: "Sandals" },
   { name: "Accessories" },
   { name: "Page" },
+  { name: "Contact Us" },
 ];
