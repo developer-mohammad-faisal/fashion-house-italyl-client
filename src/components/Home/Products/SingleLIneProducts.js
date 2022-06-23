@@ -1,26 +1,15 @@
 import React from "react";
-import { CardData } from "../../../StaticData/CardData";
+import { CardData2 } from "../../../StaticData/CardData";
 
-const Products = () => {
+const SingleLIneProducts = () => {
   return (
-    <section id="products">
+    <section id="products2">
       <div className="button">
-        <button
-          autoFocus={true}
-          className="px-4 outline-none py-8 bg-transparent text-md hover:text-primary transition duration-150 focus:font-semibold focus:text-primary text-black "
-        >
-          Clothing
-        </button>
-        <button className="px-4 py-8 bg-transparent text-md hover:text-primary transition duration-150 focus:font-semibold focus:text-primary text-black ">
-          Hand Bags
-        </button>
-        <button className="px-4 py-8 bg-transparent text-md hover:text-primary transition duration-150 focus:font-semibold focus:text-primary text-black ">
-          Sandals
-        </button>
+        <h2 className="text-2xl py-8 font-semibold">Featured Collection</h2>
       </div>
 
       <div className="main_product_card">
-        {CardData.map((product, i) => (
+        {CardData2.map((product, i) => (
           <div key={product.id} className="card">
             <div className="imgBx">
               <img src={product.img} alt="" />
@@ -43,17 +32,17 @@ const Products = () => {
             </div>
             <div className="content">
               <div className="productName">
-                <h3 className="text-2xl">{product.name.slice(0, 15)}...</h3>
+                <h3 className="text-2xl">{product.name.slice(0, 10)}...</h3>
               </div>
               <div className="price_rating">
                 <h2 className="text-xl font-sans">${product.price}</h2>
-                <div className="rating">
+               {/*  <div className="rating">
                   <i className="fa fa-star" aria-hidden="true"></i>
                   <i className="fa fa-star" aria-hidden="true"></i>
                   <i className="fa fa-star" aria-hidden="true"></i>
                   <i className="fa fa-star" aria-hidden="true"></i>
                   <i className="fa fa-star" aria-hidden="true"></i>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -63,4 +52,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default SingleLIneProducts;

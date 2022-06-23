@@ -4,6 +4,7 @@ import FlashSale from "./FlashSale/FlashSale";
 import LookStyle from "./LookStyle/LookStyle";
 import ModernFashion from "./ModernFashion/ModernFashion";
 import Products from "./Products/Products";
+import SingleLIneProducts from "./Products/SingleLIneProducts";
 
 const Middle = () => {
   return (
@@ -13,6 +14,7 @@ const Middle = () => {
         <FlashSale />
         <Products />
         <LookStyle />
+        <SingleLIneProducts />
         <ModernFashion />
       </div>
     </Fragment>
