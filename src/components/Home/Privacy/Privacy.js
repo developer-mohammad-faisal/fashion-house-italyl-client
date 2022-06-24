@@ -311,12 +311,190 @@ const Privacy = () => {
           CALIFORNIA CONSUMER PRIVACY ACT]
         </em>
         <h1 className="text-4xl font-sans mt-10">CCPA</h1> <br />
-        <p>If you are a resident of California, you have the right to access the Personal Information we hold about you (also known as the ‘Right to Know’), to port it to a new service, and to ask that your Personal Information be corrected, updated, or erased. If you would like to exercise these rights, please contact us through the contact information below [OR INSERT ALTERNATIVE</p> 
-        <em>INSTRUCTIONS FOR SENDING ACCESS, ERASURE, CORRECTION, AND PORTABILITY REQUESTS].</em> <br /> <br />
-        <p>If you would like to designate an authorized agent to submit these requests on your behalf, please contact us at the address below.</p>
+        <p>
+          If you are a resident of California, you have the right to access the
+          Personal Information we hold about you (also known as the ‘Right to
+          Know’), to port it to a new service, and to ask that your Personal
+          Information be corrected, updated, or erased. If you would like to
+          exercise these rights, please contact us through the contact
+          information below [OR INSERT ALTERNATIVE
+        </p>
+        <em>
+          INSTRUCTIONS FOR SENDING ACCESS, ERASURE, CORRECTION, AND PORTABILITY
+          REQUESTS].
+        </em>{" "}
+        <br /> <br />
+        <p>
+          If you would like to designate an authorized agent to submit these
+          requests on your behalf, please contact us at the address below.
+        </p>
         <h1 className="text-4xl font-sans mt-10">Cookies</h1> <br />
-        <p>A cookie is a small amount of information that’s downloaded to your computer or device when you visit our Site. We use a number of different cookies, including functional, performance, advertising, and social media or content cookies. Cookies make your browsing experience better by allowing the website to remember your actions and preferences (such as login and region selection). This means you don’t have to re-enter this information each time you return to the site or browse from one page to another. Cookies also provide information on how people use the website, for instance whether it’s their first time visiting or if they are a frequent visitor. <br /> <br /> We use the following cookies to optimize your experience on our Site and to provide our services.</p>
-        <h1 className="text-4xl font-sans mt-10">Cookies Necessary for the Functioning of the Store</h1> <br />
+        <p>
+          A cookie is a small amount of information that’s downloaded to your
+          computer or device when you visit our Site. We use a number of
+          different cookies, including functional, performance, advertising, and
+          social media or content cookies. Cookies make your browsing experience
+          better by allowing the website to remember your actions and
+          preferences (such as login and region selection). This means you don’t
+          have to re-enter this information each time you return to the site or
+          browse from one page to another. Cookies also provide information on
+          how people use the website, for instance whether it’s their first time
+          visiting or if they are a frequent visitor. <br /> <br /> We use the
+          following cookies to optimize your experience on our Site and to
+          provide our services.
+        </p>
+        <h1 className="text-4xl font-sans mt-10">
+          Cookies Necessary for the Functioning of the Store
+        </h1>{" "}
+        <br />
+        <div class=" ml-52 ">
+          <table class="table w-full ">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Function</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>_ab</td>
+                <td>Used in connection with access to admin.</td>
+              </tr>
+
+              <tr>
+                <td>_secure_session_id</td>
+                <td>Used in connection with navigation through a storefront.</td>
+              </tr>
+
+              <tr>
+                <td>cart</td>
+                <td>Used in connection with shopping cart.</td>
+              </tr>
+              <tr>
+                <td>cart_sig</td>
+                <td>Used in connection with checkout.</td>
+              </tr>
+              <tr>
+                <td>cart_ts</td>
+                <td>Used in connection with checkout.</td>
+              </tr>
+              <tr>
+                <td>checkout_token</td>
+                <td>Used in connection with checkout.</td>
+              </tr>
+              <tr>
+                <td>secret</td>
+                <td>Used in connection with checkout.</td>
+              </tr>
+              <tr>
+                <td>secure_customer_sig</td>
+                <td>Used in connection with customer login.</td>
+              </tr>
+              <tr>
+                <td>storefront_digest</td>
+                <td>Used in connection with customer login.</td>
+              </tr>
+              <tr>
+                <td>_shopify_u</td>
+                <td>Used to facilitate updating customer account information.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h1 className="text-4xl font-sans mt-10">Reporting and Analytics</h1>{" "}
+        <br />
+        <div class=" ml-52 ">
+          <table class="table w-full ">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Function</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>_ab</td>
+                <td>Used in connection with access to admin.</td>
+              </tr>
+
+              <tr>
+                <td>_secure_session_id</td>
+                <td>Used in connection with navigation through a storefront.</td>
+              </tr>
+
+              <tr>
+                <td>cart</td>
+                <td>Used in connection with shopping cart.</td>
+              </tr>
+              <tr>
+                <td>cart_sig</td>
+                <td>Used in connection with checkout.</td>
+              </tr>
+              <tr>
+                <td>cart_ts</td>
+                <td>Used in connection with checkout.</td>
+              </tr>
+              <tr>
+                <td>checkout_token</td>
+                <td>Used in connection with checkout.</td>
+              </tr>
+              <tr>
+                <td>secret</td>
+                <td>Used in connection with checkout.</td>
+              </tr>
+              <tr>
+                <td>secure_customer_sig</td>
+                <td>Used in connection with customer login.</td>
+              </tr>
+              <tr>
+                <td>storefront_digest</td>
+                <td>Used in connection with customer login.</td>
+              </tr>
+              <tr>
+                <td>_shopify_u</td>
+                <td>Used to facilitate updating customer account information.</td>
+              </tr>
+            </tbody>
+          </table>
+          </div> <br /> <br />
+          <em>[INSERT OTHER COOKIES OR TRACKING TECHNOLOGIES THAT YOU USE]</em> <br />
+          <p>The length of time that a cookie remains on your computer or mobile device depends on whether it is a “persistent” or “session” cookie. Session cookies last until you stop browsing and persistent cookies last until they expire or are deleted. Most of the cookies we use are persistent and will expire between 30 minutes and two years from the date they are downloaded to your device. <br /> <br /> You can control and manage cookies in various ways. Please keep in mind that removing or blocking cookies can negatively impact your user experience and parts of our website may no longer be fully accessible. <br /> <br />
+          Most browsers automatically accept cookies, but you can choose whether or not to accept cookies through your browser controls, often found in your browser’s “Tools” or “Preferences” menu. For more information on how to modify your browser settings or how to block, manage or filter cookies can be found in your browser’s help file or through such sites as <b  className="hover:text-primary cursor-pointer">www.allaboutcookies.org</b> . <br /> <br />Additionally, please note that blocking cookies may not completely prevent how we share information with third parties such as our advertising partners. To exercise your rights or opt-out of certain uses of your information by these parties, please follow the instructions in the “Behavioural Advertising” section above.</p>
+        
+        <h1 className="text-4xl font-sans mt-10">Do Not Track</h1> <br />
+        <p>
+          Please note that because there is no consistent industry understanding
+          of how to respond to “Do Not Track” signals, we do not alter our data
+          collection and usage practices when we detect such a signal from your
+          browser.
+        </p>
+        <h1 className="text-4xl font-sans mt-10">Changes</h1> <br />
+        <p>
+          We may update this Privacy Policy from time to time in order to
+          reflect, for example, changes to our practices or for other
+          operational, legal, or regulatory reasons.
+        </p>
+        <h1 className="text-4xl font-sans mt-10">Contact</h1> <br />
+        <p>
+          For more information about our privacy practices, if you have
+          questions, or if you would like to make a complaint, please contact us
+          by e-mail at [email address] or by mail using the details provided
+          below: <br /> <br />
+          Shoping Mall In USA, Ashulia, Savar, Dhaka, Dhaka 1344, Bangladesh
+        </p>{" "}
+        <br /> <br />
+        <em>Last updated: [DATE]</em>
+        <p className="pb-20">
+          If you are not satisfied with our response to your complaint, you have
+          the right to lodge your complaint with the relevant data protection
+          authority. You can contact your local data protection authority, or
+          our supervisory authority here: [ADD CONTACT INFORMATION OR WEBSITE
+          FOR THE DATA PROTECTION AUTHORITY IN YOUR JURISDICTION. FOR EXAMPLE:{" "}
+          <span className="hover:text-primary">
+            https://ico.org.uk/make-a-complaint/
+          </span>{" "}
+          ]
+        </p>
       </div>
     </div>
   );
