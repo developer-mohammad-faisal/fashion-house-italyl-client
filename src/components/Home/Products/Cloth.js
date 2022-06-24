@@ -2,6 +2,9 @@ import React from "react";
 import { ClothingData } from "../../../StaticData/CardData";
 
 const Cloth = () => {
+  const handleClick = (id) => {
+    console.log("Click to", id);
+  };
   return (
     <section id="products">
       <div className="main_product_card">
@@ -16,12 +19,16 @@ const Cloth = () => {
                     <span>Add to Wishlist</span>
                   </li>
                   <li>
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    <span>Add to Cart</span>
+                    <button onClick={() => handleClick(`${product.id}`)}>
+                      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                      <span>Add to Cart</span>
+                    </button>
                   </li>
                   <li>
-                    <i class="fa fa-eye" aria-hidden="true"></i>
-                    <span>View Details</span>
+                    <button onClick={() => handleClick(`${product.id}`)}>
+                      <i class="fa fa-eye" aria-hidden="true"></i>
+                      <span>View Details</span>
+                    </button>
                   </li>
                 </ul>
               </div>
