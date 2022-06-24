@@ -6,4 +6,5 @@ export const menus = [
   { name: "Accessories" },
   { name: "Page" },
   { name: "Contact Us" },
+ 
 ];
