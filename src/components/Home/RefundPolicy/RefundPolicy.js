@@ -1,11 +1,11 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
 const RefundPolicy = () => {
     return (
         <div className='bg-base-200'>
             <div className='bg-base-300 p-10'>
             <h1 className='text-3xl text-center font-sans'> Refund Policy</h1>
-            <p className='text-center mt-5 font-sans '><span className='hover:text-primary'>Home</span>/ Refund Policy</p>
+            <p className='text-center mt-5 font-sans '><span className='hover:text-primary'><Link to='/'>Home</Link></span>/ Refund Policy</p>
             </div>
             <div className='container mt-5'>
             <h1 className='text-4xl font-sans'> Refund Policy</h1>

@@ -1,12 +1,12 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Terms = () => {
   return (
     <div className="bg-base-200">
       <div className="bg-base-300 p-10">
         <h1 className="text-3xl text-center font-sans"> Terms of service</h1>
         <p className="text-center mt-5 font-sans ">
-          <span className="hover:text-primary">Home</span>/ Terms of service
+          <span className="hover:text-primary"><Link to='/'>Home</Link></span>/ Terms of service
         </p>
       </div>
       <div className="container mt-5">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Privacy = () => {
   return (
@@ -6,7 +7,7 @@ const Privacy = () => {
       <div className="bg-base-300 p-10">
         <h1 className="text-3xl text-center font-sans"> Privacy policy</h1>
         <p className="text-center mt-5 font-sans ">
-          <span className="hover:text-primary">Home</span>/ Privacy policy
+          <span className="hover:text-primary"><Link to='/'>Home</Link></span>/ Privacy policy
         </p>
       </div>
       <div className="container mt-5">
