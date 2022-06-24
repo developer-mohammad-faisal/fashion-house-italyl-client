@@ -15,6 +15,7 @@ import fb from "../../assets/images/icon/footerImg/social-icon/fb.png";
 import insta from "../../assets/images/icon/footerImg/social-icon/insta.png";
 import linkedin from "../../assets/images/icon/footerImg/social-icon/linkedin.png";
 import twitter from "../../assets/images/icon/footerImg/social-icon/twitter.png";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="bg-base-200">
@@ -66,9 +67,9 @@ const Footer = () => {
             <a href="facebook.com" className="hover:text-red-500">
               Contact us
             </a>
-            <a href="facebook.com" className="hover:text-red-500">
+            <Link to='/refund' className="hover:text-red-500">
               Refund Policy
-            </a>
+            </Link>
             <a href="facebook.com" className="hover:text-red-500">
               Privacy Policy
             </a>
