@@ -11,16 +11,6 @@ import {
   faSearch,
   faHeart,
   faClose,
-  faArrowDown,
-  faArrowDown19,
-  faArrowDown91,
-  faArrowDownShortWide,
-  faArrowDownLong,
-  faArrowDownUpAcrossLine,
-  faArrowDownWideShort,
-  faArrowsDownToLine,
-  faArrowDownZA,
-  faSortDown,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
