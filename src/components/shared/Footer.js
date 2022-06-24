@@ -73,9 +73,9 @@ const Footer = () => {
             <a href="facebook.com" className="hover:text-red-500">
               Privacy Policy
             </a>
-            <a href="facebook.com" className="hover:text-red-500">
-              Terms od service
-            </a>
+            <Link to='/terms' className="hover:text-red-500">
+              Terms of service
+            </Link>
             <a href="facebook.com" className="hover:text-red-500">
               Information
             </a>
