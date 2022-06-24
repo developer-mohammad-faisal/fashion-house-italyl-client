@@ -1,65 +1,55 @@
 import React from "react";
-import { CardData } from "../../../StaticData/CardData";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
+import Cloth from "./Cloth";
+import HandBag from "./HandBag";
+import Sandals from "./Sandals";
 
 const Products = () => {
   return (
-    <section id="products">
-      <div className="button">
-        <button
-          autoFocus={true}
-          className="px-4 outline-none py-8 bg-transparent text-md hover:text-primary transition duration-150 focus:font-semibold focus:text-primary text-black "
-        >
-          Clothing
-        </button>
-        <button className="px-4 py-8 bg-transparent text-md hover:text-primary transition duration-150 focus:font-semibold focus:text-primary text-black ">
-          Hand Bags
-        </button>
-        <button className="px-4 py-8 bg-transparent text-md hover:text-primary transition duration-150 focus:font-semibold focus:text-primary text-black ">
-          Sandals
-        </button>
-      </div>
+    <div className="border-0">
+      <Tabs>
+        <TabList>
+          <Tab>
+            {" "}Clothing
+            {/* <button
+              autoFocus={true}
+              className="px-4 outline-none py-8 bg-transparent text-md hover:text-primary transition duration-150 focus:font-semibold focus:text-primary text-black "
+            >
+              Clothing
+            </button> */}
+          </Tab>
+          <Tab>
+            {" "}  Hand Bags
+           {/*  <button className="px-4 py-8 bg-transparent text-md hover:text-primary transition duration-150 focus:font-semibold focus:text-primary text-black ">
+              Hand Bags
+            </button> */}
+          </Tab>
+          <Tab>
+            {" "} Sandals
+            {/* <button className="px-4 py-8 bg-transparent text-md hover:text-primary transition duration-150 focus:font-semibold focus:text-primary text-black ">
+              Sandals
+            </button> */}
+          </Tab>
+        </TabList>
 
-      <div className="main_product_card">
-        {CardData.map((product, i) => (
-          <div key={product.id} className="card">
-            <div className="imgBx">
-              <img src={product.img} alt="" />
-              <div className="action">
-                <ul>
-                  <li>
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                    <span>Add to Wishlist</span>
-                  </li>
-                  <li>
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    <span>Add to Cart</span>
-                  </li>
-                  <li>
-                    <i class="fa fa-eye" aria-hidden="true"></i>
-                    <span>View Details</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="content">
-              <div className="productName">
-                <h3 className="text-2xl">{product.name.slice(0, 15)}...</h3>
-              </div>
-              <div className="price_rating">
-                <h2 className="text-xl font-sans">${product.price}</h2>
-                <div className="rating">
-                  <i className="fa fa-star" aria-hidden="true"></i>
-                  <i className="fa fa-star" aria-hidden="true"></i>
-                  <i className="fa fa-star" aria-hidden="true"></i>
-                  <i className="fa fa-star" aria-hidden="true"></i>
-                  <i className="fa fa-star" aria-hidden="true"></i>
-                </div>
-              </div>
-            </div>
+        <TabPanel>
+          <div>
+            <Cloth />
           </div>
-        ))}
-      </div>
-    </section>
+        </TabPanel>
+        <TabPanel>
+          <div>
+            <HandBag />
+          </div>
+        </TabPanel>
+        <TabPanel>
+          <div>
+            <Sandals />
+          </div>
+        </TabPanel>
+      </Tabs>
+    </div>
   );
 };
 

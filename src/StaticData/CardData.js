@@ -1,5 +1,5 @@
 // Card Data
-export const CardData = [
+/* export const CardData = [
   {
     id: 1,
     img: "https://i.ibb.co/ygm6Cb6/product1.webp",
@@ -49,9 +49,8 @@ export const CardData = [
     img: "https://i.ibb.co/4Rh8Wy8/product7.webp",
     name: "Skin tight Jeans & Tees",
     price: 50,
-    rating: `<i className="fa empty fa-star" aria-hidden="true"></i>`,
   },
-];
+]; */
 
 // Card Data 2
 export const CardData2 = [
@@ -243,7 +242,7 @@ export const HandbagsData = [
     des: "Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut risus. Sedcus faucibus an sullamcorper mattis drostique des commodo pharetras loremos.Donec pretium egestas sapien et mollis. Sample Unordered List Comodous in tempor ullamcorper miaculis Pellentesque vitae neque mollis urna mattis...",
     brand: "Salvatore",
     movement: "Bags",
-    availability: "In Stock",
+    availability: "Out Stock",
   },
 
   {
