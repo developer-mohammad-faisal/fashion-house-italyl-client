@@ -70,9 +70,9 @@ const Footer = () => {
             <Link to='/refund' className="hover:text-red-500">
               Refund Policy
             </Link>
-            <a href="facebook.com" className="hover:text-red-500">
+            <Link to='./privacy' className="hover:text-red-500">
               Privacy Policy
-            </a>
+            </Link>
             <Link to='/terms' className="hover:text-red-500">
               Terms of service
             </Link>

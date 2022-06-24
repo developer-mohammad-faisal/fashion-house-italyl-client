@@ -2,8 +2,8 @@ import React from "react";
 
 const Terms = () => {
   return (
-    <div>
-      <div className="bg-base-200 p-10">
+    <div className="bg-base-200">
+      <div className="bg-base-300 p-10">
         <h1 className="text-3xl text-center font-sans"> Terms of service</h1>
         <p className="text-center mt-5 font-sans ">
           <span className="hover:text-primary">Home</span>/ Terms of service
