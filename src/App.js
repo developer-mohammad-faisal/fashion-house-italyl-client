@@ -18,6 +18,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import Faq from "./components/Home/Faq/Faq";
 import ContactInformation from "./pages/Contact/ContactInformation";
+import Cart from "./components/Home/Cart/Cart";
 
 function App() {
   useEffect(() => {
@@ -40,6 +41,7 @@ function App() {
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/information" element={<ContactInformation />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="*" element={<NotFoundError />} />
           </Routes>

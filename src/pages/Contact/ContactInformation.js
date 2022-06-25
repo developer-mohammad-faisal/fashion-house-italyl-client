@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ContactInformation = () => {
   return (
@@ -11,7 +12,7 @@ const ContactInformation = () => {
               <h1>
                 Already have an account?{" "}
                 <span className="cursor-pointer hover:text-primary">
-                  Log in
+                  <Link to='/login'>Log in</Link>
                 </span>
               </h1>
             </div>
