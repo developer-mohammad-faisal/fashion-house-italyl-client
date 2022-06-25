@@ -17,6 +17,7 @@ import NotFoundError from "./pages/NotFoundError/NotFoundError";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import Faq from "./components/Home/Faq/Faq";
+import ContactInformation from "./pages/Contact/ContactInformation";
 
 function App() {
   useEffect(() => {
@@ -38,6 +39,7 @@ function App() {
             <Route path="/refund" element={<RefundPolicy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
+            <Route path="/information" element={<ContactInformation />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="*" element={<NotFoundError />} />
           </Routes>
