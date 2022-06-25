@@ -9,6 +9,8 @@ const Faq = () => {
           <span className="hover:text-primary cursor-pointer">Home</span>/Faq's
         </p>
       </div>
+
+    
     </div>
   );
 };
