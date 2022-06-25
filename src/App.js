@@ -16,7 +16,6 @@ import Privacy from "./components/Home/Privacy/Privacy";
 import NotFoundError from "./pages/NotFoundError/NotFoundError";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
-import Faq from "./components/Home/Faq/Faq";
 import PopUp from "./components/shared/PopUp";
 
 function App() {
@@ -45,7 +44,6 @@ function App() {
             <Route path="/refund" element={<RefundPolicy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
-            <Route path="/faq" element={<Faq />} />
             <Route path="*" element={<NotFoundError />} />
           </Routes>
           <BrandInfo />
