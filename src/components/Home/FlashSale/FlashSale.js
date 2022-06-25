@@ -6,15 +6,15 @@ import sale2 from "../../../assets/images/flashSale/sale3.jpg";
 const FlashSale = () => {
   return (
     <Fragment>
-      <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 bg-white p-3">
+      <section className="grid  md:grid-cols-2 lg:grid-cols-3 gap-3 bg-white p-3">
         <div className="w-full h-full cursor-pointer">
-          <img src={sale1} alt="sale" />
+          <img src={sale1} className='block mx-auto' alt="sale" />
         </div>
         <div className="w-full h-full cursor-pointer">
-          <img src={sale3} alt="sale" />
+          <img src={sale3} className='block mx-auto' alt="sale" />
         </div>
         <div className="w-full h-full cursor-pointer">
-          <img src={sale2} alt="sale" />
+          <img src={sale2} className='block mx-auto' alt="sale" />
         </div>
       </section>
     </Fragment>
