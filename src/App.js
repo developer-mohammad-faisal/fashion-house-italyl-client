@@ -10,18 +10,19 @@ import Register from "./pages/shared/Register/Register";
 import BrandInfo from "./components/shared/BrandInfo";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
-import RefundPolicy from './components/Home/RefundPolicy/RefundPolicy'
-import Terms from './components/Home/Terms/Terms'
-import Privacy from './components/Home/Privacy/Privacy'
+import RefundPolicy from "./components/Home/RefundPolicy/RefundPolicy";
+import Terms from "./components/Home/Terms/Terms";
+import Privacy from "./components/Home/Privacy/Privacy";
 import NotFoundError from "./pages/NotFoundError/NotFoundError";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Faq from "./components/Home/Faq/Faq";
 import ClothDetails from "./components/ProductDetails/ClothDetails";
 import HandBagDetails from "./components/ProductDetails/HandBagDetails";
 import SandalDetails from "./components/ProductDetails/SandalDetails";
 import ContactInformation from "./pages/Contact/ContactInformation";
-import Cart from "./components/Home/Cart/Cart";
+import Cart1 from "./components/Home/Cart/Cart1";
+import Cart2 from "./components/Home/Cart/Cart2";
+import Cart3 from "./components/Home/Cart/Cart3";
 
 function App() {
   useEffect(() => {
@@ -44,8 +45,9 @@ function App() {
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/information" element={<ContactInformation />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/faq" element={<Faq />} />
+            <Route path="/cart1/:productId" element={<Cart1 />} />
+            <Route path="/cart2/:productId" element={<Cart2 />} />
+            <Route path="/cart3/:productId" element={<Cart3 />} />
             <Route path="/clothDetails/:clothID" element={<ClothDetails />} />
             <Route path="/handBagDetails/:handBagID" element={<HandBagDetails />} />
             <Route path="/sandalDetails/:sandalID" element={<SandalDetails />} />

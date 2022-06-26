@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -12,18 +13,14 @@ const ContactInformation = () => {
               <h1>
                 Already have an account?{" "}
                 <span className="cursor-pointer hover:text-primary">
-                  <Link to='/login'>Log in</Link>
+                  <Link to="/login">Log in</Link>
                 </span>
               </h1>
             </div>
           </div>
           <div className="mt-5">
             <form action="">
-              <input
-                type="email"
-                placeholder="Email ot phone number"
-                class="input input-bordered w-full max-w-md"
-              />
+              <input type="email" placeholder="Email ot phone number" class="input input-bordered w-full max-w-md" />
             </form>
           </div>
           <div>
@@ -43,35 +40,16 @@ const ContactInformation = () => {
           </div>
           <div className="mt-5">
             <form action="">
-              <input
-                type="text"
-                placeholder="Your Name"
-                class="input input-bordered w-full max-w-md"
-              />{" "}
+              <input type="text" placeholder="Your Name" class="input input-bordered w-full max-w-md" /> <br />
+              <input type="text" placeholder="Your Address" class="input input-bordered w-full max-w-md my-2" />
               <br />
-              <input
-                type="text"
-                placeholder="Your Address"
-                class="input input-bordered w-full max-w-md my-2"
-              />
+              <input type="text" placeholder="Your City" class="input input-bordered w-full max-w-md my-2" />
               <br />
-              <input
-                type="text"
-                placeholder="Your City"
-                class="input input-bordered w-full max-w-md my-2"
-              />
-              <br />
-              <input
-                type="number"
-                placeholder="Postal code"
-                class="input input-bordered w-full max-w-md my-2"
-              />
+              <input type="number" placeholder="Postal code" class="input input-bordered w-full max-w-md my-2" />
               <div class="form-control max-w-md">
                 <label class="label cursor-pointer">
                   <input type="checkbox" checked="checked" class="checkbox" />
-                  <span class="label-text mr-48">
-                    Save this information for next time
-                  </span>
+                  <span class="label-text mr-48">Save this information for next time</span>
                 </label>
               </div>
             </form>
@@ -81,9 +59,7 @@ const ContactInformation = () => {
               <h1>Return to cart</h1>
             </div>
             <div>
-              <button class="btn btn-outline btn-success ml-40 btn-sm">
-                Continue to shipping
-              </button>
+              <button class="btn btn-outline btn-success ml-40 btn-sm">Continue to shipping</button>
             </div>
           </div>
         </div>

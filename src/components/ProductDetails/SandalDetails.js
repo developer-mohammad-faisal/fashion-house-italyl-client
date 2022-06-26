@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { SandalsData } from "../../StaticData/CardData";
 import { faCartArrowDown, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,6 +10,7 @@ import twitter from "../../assets/images/icon/footerImg/social-icon/twitters.png
 import instagram from "../../assets/images/icon/footerImg/social-icon/instagram.png";
 
 const SandalDetails = () => {
+  const navigate = useNavigate();
   const { sandalID } = useParams();
   const match = SandalsData.find((product) => product.id == sandalID);
 
@@ -41,11 +42,11 @@ const SandalDetails = () => {
               </h2>
             </div>
             <div className="flex item-center space-x-4 py-4">
-              <button className="text-white px-5 py-3 bg-stone-900 border-none rounded-none font-normal transform duration-500 hover:bg-primary">
+              <button onClick={() => navigate(`/cart3/${match.id}`)} className="text-white px-5 py-3 bg-stone-900 border-none rounded-none font-normal transform duration-500 hover:bg-primary">
                 {" "}
                 <FontAwesomeIcon icon={faCartArrowDown} /> Add to Cart
               </button>
-              <button className="text-white px-5 py-3 bg-stone-900 border-none rounded-none font-normal transform duration-500 hover:bg-primary">
+              <button onClick={() => navigate(`/cart3/${match.id}`)} className="text-white px-5 py-3 bg-stone-900 border-none rounded-none font-normal transform duration-500 hover:bg-primary">
                 Buy it Now
               </button>
             </div>
