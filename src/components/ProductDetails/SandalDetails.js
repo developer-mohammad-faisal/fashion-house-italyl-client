@@ -31,7 +31,7 @@ const SandalDetails = () => {
                 </div>
 
                 <div className="flex-1 flex flex-col items-start text-start space-y-1">
-                  <h1 className="text-3xl font-semibold">{match?.name}</h1>
+                  <h1 className="text-3xl font-[500]">{match?.name}</h1>
                   <h2 className="text-2xl font-sans font-semibold text-primary">${match?.price}</h2>
                   <p className="pt-7">{match.des}</p>
                   <div className="space-y-5 pt-4 font-semibold text-[14px]">
