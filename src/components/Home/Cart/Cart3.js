@@ -88,7 +88,9 @@ const Cart3 = () => {
                 <button class="  duration-500 m-1 px-2 py-3 bg-black text-white hover:bg-primary">Continue Shopping</button>
               </Link>
               <button class="  duration-500 m-1 px-2 py-3 bg-black text-white hover:bg-primary">Update Cart</button>
-              <button class="  duration-500 m-1 px-2 py-3 bg-black text-white hover:bg-primary">Cheek Out</button>
+              <Link to="/checkout">
+                <button class="  duration-500 m-1 px-2 py-3 bg-black text-white hover:bg-primary">Cheek Out</button>
+              </Link>
             </div>
           </div>
         </div>

@@ -26,7 +26,7 @@ import img8 from "../../../assets/images/navImg/img8.jpeg";
 import iconHamburger from "../../../assets/images/icon/hamburger.png";
 import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
-import "../../../styles/components/nav.css";
+import "./nav.css";
 
 const Navbar = () => {
   let [open, setOpen] = useState(false);
@@ -37,7 +37,6 @@ const Navbar = () => {
       .then((res) => res.json())
       .then((data) => setMenuItem(data));
   }, []);
-  // console.log(menuItem[0].collection[0].bags);
   return (
     <React.Fragment>
       <section>
@@ -179,16 +178,8 @@ const Navbar = () => {
             }`}
           >
             <li>
-              <p
-                className="lg:hidden  absolute right-2 cursor-pointer z-20 top-2"
-                onClick={() => setOpen(false)}
-              >
-                <FontAwesomeIcon
-                  className="text-white bg-black px-3 rounded-sm py-2 "
-                  icon={faClose}
-                />
               <p className="lg:hidden  absolute right-2 cursor-pointer z-20 top-2" onClick={() => setOpen(false)}>
-                <FontAwesomeIcon className="text-white bg-black px-3 py-2 " icon={faClose} />
+                <FontAwesomeIcon className="text-white bg-black px-3 rounded-sm py-2 " icon={faClose} />
               </p>
             </li>
             <Link to="/home">
@@ -201,150 +192,47 @@ const Navbar = () => {
             <li className=" hidden lg:block ">
               <div class="dropdown1 transition-all duration-1000 ease-out">
                 <span className="flex cursor-pointer py-[14px] hover:text-primary transition-all duration-700   font-semibold justify-between items-center gap-2">
-                  Collection{" "}
-                  <FontAwesomeIcon
-                    className="text-sm font-bold"
-                    icon={faAngleDown}
-                  />{" "}
+                  Collection <FontAwesomeIcon className="text-sm font-bold" icon={faAngleDown} />{" "}
                 </span>
 
                 <div class="dropdown-content1 ">
                   <div className="flex">
                     <div className="flex-1 flex items-start">
                       <div className="w-2/6">
-                        <h2 className=" font-bold uppercase mb-5 text-primary">
-                          HAND BAGS{" "}
-                        </h2>
+                        <h2 className=" font-bold uppercase mb-5 text-primary">HAND BAGS </h2>
 
                         <div className="space-y-3">
                           {menuItem[0]?.collection[0]?.bags?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2 cursor-pointer text-[14px]"
-                            >
+                            <div key={index} className="flex items-center gap-2 cursor-pointer text-[14px]">
                               {" "}
                               <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
+                              <p className="hover:text-primary  hover:font-semibold">{x}</p>
                             </div>
                           ))}
                         </div>
                       </div>
                       <div className="w-2/6">
-                        <h2 className="uppercase font-bold mb-5 text-primary">
-                          short skirt
-                        </h2>
+                        <h2 className="uppercase font-bold mb-5 text-primary">short skirt</h2>
 
                         <div className="space-y-3">
-                          {menuItem[0]?.collection[1]?.skirt?.map(
-                            (x, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center gap-2 cursor-pointer  text-[14px]"
-                              >
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                                <p className="hover:text-primary  hover:font-semibold">
-                                  {x}
-                                </p>
-                <a className=" font-semibold md:border-none border-b-[1px] border-gray-300 px-5   cursor-pointer text-md block py-1">Home</a>
-              </li>
-            </Link>
-            <Link to="/collection">
-              <li className="text-zinc-800    md:border-none border-b-[1px] border-gray-300  duration-300 border-transparent">
-                <div class="dropdown1 ">
-                  <span className="flex font-semibold justify-between items-center gap-2">
-                    Collection <FontAwesomeIcon className="text-sm font-bold" icon={faAngleDown} />{" "}
-                  </span>
-
-                  <div class="dropdown-content1 ">
-                    <div className="flex">
-                      <div className="flex-1 flex items-start">
-                        <div className="w-2/6">
-                          <h2 className=" font-bold uppercase mb-5 text-primary">HAND BAGS </h2>
-
-                          <div className="space-y-3">
-                            {menuItem[0]?.collection[0]?.bags?.map((x, index) => (
-                              <div key={index} className="flex items-center gap-2 text-[14px]">
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                        <div className="w-2/6">
-                          <h2 className="uppercase font-bold mb-5 text-primary">short skirt</h2>
-
-                          <div className="space-y-3">
-                            {menuItem[0]?.collection[1]?.skirt?.map((x, index) => (
-                              <div key={index} className="flex items-center gap-2 text-[14px]">
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                        <div className="w-2/6">
-                          <h2 className="uppercase font-bold mb-5 text-primary">gown</h2>
-
-                          <div className="space-y-3">
-                            {menuItem[0]?.collection[2]?.gown?.map((x, index) => (
-                              <div key={index} className="flex items-center gap-2 text-[14px]">
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                      <div className="flex-1">
-                        <img className="block mx-auto" src={img1} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </Link>
-            <Link to="/shop">
-              <li className="text-zinc-800   md:border-none border-b-[1px] border-gray-300  duration-300 border-transparent">
-                <div class="dropdown1 ">
-                  <span className="flex font-semibold justify-between items-center gap-2">
-                    Shop <FontAwesomeIcon className="text-sm font-bold" icon={faAngleDown} />{" "}
-                  </span>
-
-                  <div class="dropdown-content1 ">
-                    <div className="">
-                      <div className="grid grid-cols-4">
-                        <div className="">
-                          <h2 className=" font-bold uppercase mb-5 text-primary">BAGS </h2>
-
-                          <div className="space-y-3">
-                            {menuItem[1]?.shop[0]?.bags?.map((x, index) => (
-                              <div key={index} className="flex items-center gap-2 text-[14px]">
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
-                              </div>
-                            )
-                          )}
+                          {menuItem[0]?.collection[1]?.skirt?.map((x, index) => (
+                            <div key={index} className="flex items-center gap-2 cursor-pointer  text-[14px]">
+                              {" "}
+                              <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
+                              <p className="hover:text-primary  hover:font-semibold">{x}</p>
+                            </div>
+                          ))}
                         </div>
                       </div>
                       <div className="w-2/6">
-                        <h2 className="uppercase font-bold mb-5 text-primary">
-                          gown
-                        </h2>
+                        <h2 className="uppercase font-bold mb-5 text-primary">gown</h2>
 
                         <div className="space-y-3">
                           {menuItem[0]?.collection[2]?.gown?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2 cursor-pointer  text-[14px]"
-                            >
+                            <div key={index} className="flex items-center gap-2 cursor-pointer  text-[14px]">
                               {" "}
                               <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
+                              <p className="hover:text-primary  hover:font-semibold">{x}</p>
                             </div>
                           ))}
                         </div>
@@ -360,92 +248,60 @@ const Navbar = () => {
             <li className=" hidden lg:block ">
               <div class="dropdown1 ">
                 <span className="flex cursor-pointer  py-[14px] hover:text-primary transition-all duration-700  font-semibold justify-between items-center gap-2">
-                  Shop{" "}
-                  <FontAwesomeIcon
-                    className="text-sm font-bold"
-                    icon={faAngleDown}
-                  />{" "}
+                  Shop <FontAwesomeIcon className="text-sm font-bold" icon={faAngleDown} />{" "}
                 </span>
 
                 <div class="dropdown-content1 ">
                   <div className="">
                     <div className="grid grid-cols-4">
                       <div className="">
-                        <h2 className=" font-bold uppercase mb-5 text-primary">
-                          BAGS{" "}
-                        </h2>
+                        <h2 className=" font-bold uppercase mb-5 text-primary">BAGS </h2>
 
                         <div className="space-y-3">
                           {menuItem[1]?.shop[0]?.bags?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2  cursor-pointer text-[14px]"
-                            >
+                            <div key={index} className="flex items-center gap-2  cursor-pointer text-[14px]">
                               {" "}
                               <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
+                              <p className="hover:text-primary  hover:font-semibold">{x}</p>
                             </div>
                           ))}
                         </div>
                       </div>
                       <div className="">
-                        <h2 className="uppercase font-bold mb-5 text-primary">
-                          sandals
-                        </h2>
+                        <h2 className="uppercase font-bold mb-5 text-primary">sandals</h2>
 
                         <div className="space-y-3">
                           {menuItem[1]?.shop[1].sandals?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2  cursor-pointer text-[14px]"
-                            >
+                            <div key={index} className="flex items-center gap-2  cursor-pointer text-[14px]">
                               {" "}
                               <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
+                              <p className="hover:text-primary  hover:font-semibold">{x}</p>
                             </div>
                           ))}
                         </div>
                       </div>
                       <div className="">
-                        <h2 className="uppercase font-bold mb-5 text-primary">
-                          high heel
-                        </h2>
+                        <h2 className="uppercase font-bold mb-5 text-primary">high heel</h2>
 
                         <div className="space-y-3">
                           {menuItem[1]?.shop[2]?.heel?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2 cursor-pointer  text-[14px]"
-                            >
+                            <div key={index} className="flex items-center gap-2 cursor-pointer  text-[14px]">
                               {" "}
                               <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
+                              <p className="hover:text-primary  hover:font-semibold">{x}</p>
                             </div>
                           ))}
                         </div>
                       </div>
                       <div className="">
-                        <h2 className="uppercase font-bold mb-5 text-primary">
-                          Shoes
-                        </h2>
+                        <h2 className="uppercase font-bold mb-5 text-primary">Shoes</h2>
 
                         <div className="space-y-3">
                           {menuItem[1]?.shop[3]?.shoes?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2 cursor-pointer  text-[14px]"
-                            >
+                            <div key={index} className="flex items-center gap-2 cursor-pointer  text-[14px]">
                               {" "}
                               <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
+                              <p className="hover:text-primary  hover:font-semibold">{x}</p>
                             </div>
                           ))}
                         </div>
@@ -458,81 +314,46 @@ const Navbar = () => {
             <li className=" hidden lg:block ">
               <div class="dropdown1 ">
                 <span className="flex py-[14px]  cursor-pointer  hover:text-primary transition-all duration-700  font-semibold justify-between items-center gap-2">
-                  Trendy Wear{" "}
-                  <FontAwesomeIcon
-                    className="text-sm font-bold"
-                    icon={faAngleDown}
-                  />{" "}
+                  Trendy Wear <FontAwesomeIcon className="text-sm font-bold" icon={faAngleDown} />{" "}
                 </span>
                 <div class="dropdown-content1 ">
                   <div className="flex">
                     <div className="flex-1 flex items-start">
                       <div className="w-2/6">
-                        <h2 className=" font-bold uppercase mb-5 text-primary">
-                          t-shirt{" "}
-                        </h2>
+                        <h2 className=" font-bold uppercase mb-5 text-primary">t-shirt </h2>
 
                         <div className="space-y-3">
                           {menuItem[0]?.collection[0]?.bags?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2 cursor-pointer  text-[14px]"
-                            >
+                            <div key={index} className="flex items-center gap-2 cursor-pointer  text-[14px]">
                               {" "}
                               <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
+                              <p className="hover:text-primary  hover:font-semibold">{x}</p>
                             </div>
                           ))}
                         </div>
                       </div>
                       <div className="w-2/6">
-                        <h2 className="uppercase font-bold mb-5 text-primary">
-                          frock
-                        </h2>
+                        <h2 className="uppercase font-bold mb-5 text-primary">frock</h2>
 
                         <div className="space-y-3">
-                          {menuItem[0]?.collection[1]?.skirt?.map(
-                            (x, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center gap-2  cursor-pointer text-[14px]"
-                              >
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                                <p className="hover:text-primary  hover:font-semibold">
-                                  {x}
-                                </p>
-                        <div className="">
-                          <h2 className="uppercase font-bold mb-5 text-primary">sandals</h2>
-
-                          <div className="space-y-3">
-                            {menuItem[1]?.shop[1].sandals?.map((x, index) => (
-                              <div key={index} className="flex items-center gap-2 text-[14px]">
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
-                              </div>
-                            )
-                          )}
+                          {menuItem[0]?.collection[1]?.skirt?.map((x, index) => (
+                            <div key={index} className="flex items-center gap-2  cursor-pointer text-[14px]">
+                              {" "}
+                              <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
+                              <p className="hover:text-primary  hover:font-semibold">{x}</p>
+                            </div>
+                          ))}
                         </div>
                       </div>
                       <div className="w-2/6">
-                        <h2 className="uppercase font-bold mb-5 text-primary">
-                          sleveless top
-                        </h2>
+                        <h2 className="uppercase font-bold mb-5 text-primary">sleveless top</h2>
 
                         <div className="space-y-3">
                           {menuItem[0]?.collection[2]?.gown?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2 cursor-pointer  text-[14px]"
-                            >
+                            <div key={index} className="flex items-center gap-2 cursor-pointer  text-[14px]">
                               {" "}
                               <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
+                              <p className="hover:text-primary  hover:font-semibold">{x}</p>
                             </div>
                           ))}
                         </div>
@@ -543,9 +364,7 @@ const Navbar = () => {
                         <div>
                           <img src={img2} className="h-[320px] block" alt="" />
                           <div className="text-center mt-4">
-                            <h2 className="uppercase font-semibold">
-                              Hand bags
-                            </h2>
+                            <h2 className="uppercase font-semibold">Hand bags</h2>
                             <p className="">$530.00</p>
                           </div>
                         </div>
@@ -561,68 +380,34 @@ const Navbar = () => {
             <li className="hidden lg:block ">
               <div class="dropdown1 ">
                 <span className="flex cursor-pointer  py-[14px]  hover:text-primary transition-all duration-700  font-semibold justify-between items-center gap-2">
-                  Sandals{" "}
-                  <FontAwesomeIcon
-                    className="text-sm font-bold"
-                    icon={faAngleDown}
-                  />{" "}
+                  Sandals <FontAwesomeIcon className="text-sm font-bold" icon={faAngleDown} />{" "}
                 </span>
                 <div class="dropdown-content1 ">
                   <div className="flex">
                     <div className="flex-1 flex items-start">
                       <div className="w-2/6">
                         <div>
-                          <h2 className=" font-bold uppercase mb-5 text-primary">
-                            KITTEN HEEL
-                          </h2>
+                          <h2 className=" font-bold uppercase mb-5 text-primary">KITTEN HEEL</h2>
 
                           <div className="space-y-3">
                             {menuItem[1]?.shop[0]?.bags?.map((x, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center gap-2 cursor-pointer  text-[14px]"
-                              >
+                              <div key={index} className="flex items-center gap-2 cursor-pointer  text-[14px]">
                                 {" "}
                                 <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                                <p className="hover:text-primary  hover:font-semibold">
-                                  {x}
-                                </p>
-                        <div className="">
-                          <h2 className="uppercase font-bold mb-5 text-primary">high heel</h2>
-
-                          <div className="space-y-3">
-                            {menuItem[1]?.shop[2]?.heel?.map((x, index) => (
-                              <div key={index} className="flex items-center gap-2 text-[14px]">
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
+                                <p className="hover:text-primary  hover:font-semibold">{x}</p>
                               </div>
                             ))}
                           </div>
                         </div>
-             <div className="mt-5">
-                          <h2 className=" font-bold uppercase mb-5 text-primary">
-                            mules
-                          </h2>
+                        <div className="mt-5">
+                          <h2 className=" font-bold uppercase mb-5 text-primary">mules</h2>
 
                           <div className="space-y-3">
                             {menuItem[1]?.shop[0]?.bags?.map((x, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center  cursor-pointer gap-2 text-[14px]"
-                              >
+                              <div key={index} className="flex items-center  cursor-pointer gap-2 text-[14px]">
                                 {" "}
                                 <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                                <p className="hover:text-primary  hover:font-semibold">
-                                  {x}
-                                </p>
-                        <div className="">
-                          <h2 className="uppercase font-bold mb-5 text-primary">Shoes</h2>
-
-                          <div className="space-y-3">
-                            {menuItem[1]?.shop[3]?.shoes?.map((x, index) => (
-                              <div key={index} className="flex items-center gap-2 text-[14px]">
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
+                                <p className="hover:text-primary  hover:font-semibold">{x}</p>
                               </div>
                             ))}
                           </div>
@@ -630,241 +415,27 @@ const Navbar = () => {
                       </div>
                       <div className="w-2/6">
                         <div>
-                          <h2 className="uppercase font-bold mb-5 text-primary">
-                            ANKLE STRAP HEELS
-                          </h2>
+                          <h2 className="uppercase font-bold mb-5 text-primary">ANKLE STRAP HEELS</h2>
 
                           <div className="space-y-3">
                             {menuItem[1]?.shop[1]?.sandals?.map((x, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center cursor-pointer  gap-2 text-[14px]"
-                              >
+                              <div key={index} className="flex items-center cursor-pointer  gap-2 text-[14px]">
                                 {" "}
                                 <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                                <p className="hover:text-primary  hover:font-semibold">
-                                  {x}
-                                </p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </Link>
-            <Link to="/trendy">
-              <li className="text-zinc-800   md:border-none border-b-[1px] border-gray-300  duration-300 border-transparent">
-                <div class="dropdown1 ">
-                  <span className="flex font-semibold justify-between items-center gap-2">
-                    Trendy Wear <FontAwesomeIcon className="text-sm font-bold" icon={faAngleDown} />{" "}
-                  </span>
-                  <div class="dropdown-content1 ">
-                    <div className="flex">
-                      <div className="flex-1 flex items-start">
-                        <div className="w-2/6">
-                          <h2 className=" font-bold uppercase mb-5 text-primary">t-shirt </h2>
-
-                          <div className="space-y-3">
-                            {menuItem[0]?.collection[0]?.bags?.map((x, index) => (
-                              <div key={index} className="flex items-center gap-2 text-[14px]">
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                        <div className="w-2/6">
-                          <h2 className="uppercase font-bold mb-5 text-primary">frock</h2>
-
-                          <div className="space-y-3">
-                            {menuItem[0]?.collection[1]?.skirt?.map((x, index) => (
-                              <div key={index} className="flex items-center gap-2 text-[14px]">
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                        <div className="w-2/6">
-                          <h2 className="uppercase font-bold mb-5 text-primary">sleveless top</h2>
-
-                          <div className="space-y-3">
-                            {menuItem[0]?.collection[2]?.gown?.map((x, index) => (
-                              <div key={index} className="flex items-center gap-2 text-[14px]">
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                      <div className="flex-1">
-                        <div className="flex items-start justify-end gap-5">
-                          <div>
-                            <img src={img2} className="h-[320px] block" alt="" />
-                            <div className="text-center mt-4">
-                              <h2 className="uppercase font-semibold">Hand bags</h2>
-                              <p className="">$530.00</p>
-                            </div>
-                          </div>
-                          <div>
-                            <img src={img3} alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </Link>
-            <Link to="/trendy">
-              <li className="text-zinc-800   md:border-none border-b-[1px] border-gray-300  duration-300 border-transparent">
-                <div class="dropdown1 ">
-                  <span className="flex font-semibold justify-between items-center gap-2">
-                    Sandals <FontAwesomeIcon className="text-sm font-bold" icon={faAngleDown} />{" "}
-                  </span>
-                  <div class="dropdown-content1 ">
-                    <div className="flex">
-                      <div className="flex-1 flex items-start">
-                        <div className="w-2/6">
-                          <div>
-                            <h2 className=" font-bold uppercase mb-5 text-primary">KITTEN HEEL</h2>
-
-                            <div className="space-y-3">
-                              {menuItem[1]?.shop[0]?.bags?.map((x, index) => (
-                                <div key={index} className="flex items-center gap-2 text-[14px]">
-                                  {" "}
-                                  <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                          <div className="mt-5">
-                            <h2 className=" font-bold uppercase mb-5 text-primary">mules</h2>
-
-                            <div className="space-y-3">
-                              {menuItem[1]?.shop[0]?.bags?.map((x, index) => (
-                                <div key={index} className="flex items-center gap-2 text-[14px]">
-                                  {" "}
-                                  <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                        <div className="w-2/6">
-                          <div>
-                            <h2 className="uppercase font-bold mb-5 text-primary">ANKLE STRAP HEELS</h2>
-
-                            <div className="space-y-3">
-                              {menuItem[1]?.shop[1]?.sandals?.map((x, index) => (
-                                <div key={index} className="flex items-center gap-2 text-[14px]">
-                                  {" "}
-                                  <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                          <div className="mt-5">
-                            <h2 className="uppercase font-bold mb-5 text-primary">CORK HIGH HEELS</h2>
-
-                            <div className="space-y-3">
-                              {menuItem[1]?.shop[1]?.sandals?.map((x, index) => (
-                                <div key={index} className="flex items-center gap-2 text-[14px]">
-                                  {" "}
-                                  <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                        <div className="w-2/6">
-                          <div>
-                            <h2 className="uppercase font-bold mb-5 text-primary">PLATFORM HEELS</h2>
-
-                            <div className="space-y-3">
-                              {menuItem[1]?.shop[2]?.heel?.map((x, index) => (
-                                <div key={index} className="flex items-center gap-2 text-[14px]">
-                                  {" "}
-                                  <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                          <div className="mt-5">
-                            <h2 className="uppercase font-bold mb-5 text-primary">CORSET HEELS</h2>
-
-                            <div className="space-y-3">
-                              {menuItem[1]?.shop[2]?.heel?.map((x, index) => (
-                                <div key={index} className="flex items-center gap-2 text-[14px]">
-                                  {" "}
-                                  <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="flex-1">
-                        <div className="flex items-start justify-end gap-2">
-                          <div className="flex flex-col gap-2">
-                            <img src={img4} alt="" />
-                            <img src={img5} alt="" />
-                          </div>
-                          <div>
-                            <img src={img6} alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </Link>
-            <Link to="/accessories">
-              <li className="text-zinc-800   md:border-none border-b-[1px] border-gray-300  duration-300 border-transparent">
-                <div class="dropdown1 ">
-                  <span className="flex font-semibold justify-between items-center gap-2">
-                    Accessories <FontAwesomeIcon className="text-sm font-bold" icon={faAngleDown} />{" "}
-                  </span>
-
-                  <div class="dropdown-content1 ">
-                    <div className="">
-                      <div className="grid grid-cols-4">
-                        <div className="">
-                          <h2 className=" font-bold uppercase mb-5 text-primary">earrings </h2>
-
-                          <div className="space-y-3">
-                            {menuItem[1]?.shop[0]?.bags?.map((x, index) => (
-                              <div key={index} className="flex items-center gap-2 text-[14px]">
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
+                                <p className="hover:text-primary  hover:font-semibold">{x}</p>
                               </div>
                             ))}
                           </div>
                         </div>
                         <div className="mt-5">
-                          <h2 className="uppercase font-bold mb-5 text-primary">
-                            CORK HIGH HEELS
-                          </h2>
+                          <h2 className="uppercase font-bold mb-5 text-primary">CORK HIGH HEELS</h2>
 
                           <div className="space-y-3">
                             {menuItem[1]?.shop[1]?.sandals?.map((x, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center cursor-pointer  gap-2 text-[14px]"
-                              >
+                              <div key={index} className="flex items-center cursor-pointer  gap-2 text-[14px]">
                                 {" "}
                                 <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                                <p className="hover:text-primary  hover:font-semibold">
-                                  {x}
-                                </p>
-                        <div className="">
-                          <h2 className="uppercase font-bold mb-5 text-primary">bangles</h2>
-
-                          <div className="space-y-3">
-                            {menuItem[1]?.shop[1].sandals?.map((x, index) => (
-                              <div key={index} className="flex items-center gap-2 text-[14px]">
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
+                                <p className="hover:text-primary  hover:font-semibold">{x}</p>
                               </div>
                             ))}
                           </div>
@@ -872,57 +443,27 @@ const Navbar = () => {
                       </div>
                       <div className="w-2/6">
                         <div>
-                          <h2 className="uppercase font-bold mb-5 text-primary">
-                            PLATFORM HEELS
-                          </h2>
+                          <h2 className="uppercase font-bold mb-5 text-primary">PLATFORM HEELS</h2>
 
                           <div className="space-y-3">
                             {menuItem[1]?.shop[2]?.heel?.map((x, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center  cursor-pointer gap-2 text-[14px]"
-                              >
+                              <div key={index} className="flex items-center  cursor-pointer gap-2 text-[14px]">
                                 {" "}
                                 <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                                <p className="hover:text-primary  hover:font-semibold">
-                                  {x}
-                                </p>
-                        <div className="">
-                          <h2 className="uppercase font-bold mb-5 text-primary">watch</h2>
-
-                          <div className="space-y-3">
-                            {menuItem[1]?.shop[2]?.heel?.map((x, index) => (
-                              <div key={index} className="flex items-center gap-2 text-[14px]">
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
+                                <p className="hover:text-primary  hover:font-semibold">{x}</p>
                               </div>
                             ))}
                           </div>
                         </div>
                         <div className="mt-5">
-                          <h2 className="uppercase font-bold mb-5 text-primary">
-                            CORSET HEELS
-                          </h2>
+                          <h2 className="uppercase font-bold mb-5 text-primary">CORSET HEELS</h2>
 
                           <div className="space-y-3">
                             {menuItem[1]?.shop[2]?.heel?.map((x, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center cursor-pointer  gap-2 text-[14px]"
-                              >
+                              <div key={index} className="flex items-center cursor-pointer  gap-2 text-[14px]">
                                 {" "}
                                 <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                                <p className="hover:text-primary  hover:font-semibold">
-                                  {x}
-                                </p>
-                        <div className="">
-                          <h2 className="uppercase font-bold mb-5 text-primary">belt</h2>
-
-                          <div className="space-y-3">
-                            {menuItem[1]?.shop[3]?.shoes?.map((x, index) => (
-                              <div key={index} className="flex items-center gap-2 text-[14px]">
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p> <p>{x}</p>
+                                <p className="hover:text-primary  hover:font-semibold">{x}</p>
                               </div>
                             ))}
                           </div>
@@ -947,92 +488,60 @@ const Navbar = () => {
             <li className="hidden lg:block ">
               <div class="dropdown1 ">
                 <span className="flex cursor-pointer  py-[14px] hover:text-primary transition-all duration-700  font-semibold justify-between items-center gap-2">
-                  Accessories{" "}
-                  <FontAwesomeIcon
-                    className="text-sm font-bold"
-                    icon={faAngleDown}
-                  />{" "}
+                  Accessories <FontAwesomeIcon className="text-sm font-bold" icon={faAngleDown} />{" "}
                 </span>
 
                 <div class="dropdown-content1 ">
                   <div className="">
                     <div className="grid grid-cols-4">
                       <div className="">
-                        <h2 className=" font-bold uppercase mb-5 text-primary">
-                          earrings{" "}
-                        </h2>
+                        <h2 className=" font-bold uppercase mb-5 text-primary">earrings </h2>
 
                         <div className="space-y-3">
                           {menuItem[1]?.shop[0]?.bags?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2  cursor-pointer text-[14px]"
-                            >
+                            <div key={index} className="flex items-center gap-2  cursor-pointer text-[14px]">
                               {" "}
                               <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
+                              <p className="hover:text-primary  hover:font-semibold">{x}</p>
                             </div>
                           ))}
                         </div>
                       </div>
                       <div className="">
-                        <h2 className="uppercase font-bold mb-5 text-primary">
-                          bangles
-                        </h2>
+                        <h2 className="uppercase font-bold mb-5 text-primary">bangles</h2>
 
                         <div className="space-y-3">
                           {menuItem[1]?.shop[1].sandals?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2  cursor-pointer text-[14px]"
-                            >
+                            <div key={index} className="flex items-center gap-2  cursor-pointer text-[14px]">
                               {" "}
                               <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
+                              <p className="hover:text-primary  hover:font-semibold">{x}</p>
                             </div>
                           ))}
                         </div>
                       </div>
                       <div className="">
-                        <h2 className="uppercase font-bold mb-5 text-primary">
-                          watch
-                        </h2>
+                        <h2 className="uppercase font-bold mb-5 text-primary">watch</h2>
 
                         <div className="space-y-3">
                           {menuItem[1]?.shop[2]?.heel?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2 cursor-pointer  text-[14px]"
-                            >
+                            <div key={index} className="flex items-center gap-2 cursor-pointer  text-[14px]">
                               {" "}
                               <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
+                              <p className="hover:text-primary  hover:font-semibold">{x}</p>
                             </div>
                           ))}
                         </div>
                       </div>
                       <div className="">
-                        <h2 className="uppercase font-bold mb-5 text-primary">
-                          belt
-                        </h2>
+                        <h2 className="uppercase font-bold mb-5 text-primary">belt</h2>
 
                         <div className="space-y-3">
                           {menuItem[1]?.shop[3]?.shoes?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2  cursor-pointer text-[14px]"
-                            >
+                            <div key={index} className="flex items-center gap-2  cursor-pointer text-[14px]">
                               {" "}
                               <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
+                              <p className="hover:text-primary  hover:font-semibold">{x}</p>
                             </div>
                           ))}
                         </div>
@@ -1053,17 +562,8 @@ const Navbar = () => {
               </div>
             </li>
             <Link to="/contact">
-              <li className=" ">
-                <a className=" font-semibold   hover:text-primary transition-all duration-700 cursor-pointer text-md block py-1">
-                  Contact us
-                </a>
-              </li>
-            </Link>
-            <Link to="/about">
-              <li className=" ">
-                <a className=" font-semibold hover:text-primary transition-all duration-700 cursor-pointer text-md block py-1">
-                  About us
-                </a>
+              <li>
+                <a className=" font-semibold   hover:text-primary transition-all duration-700 cursor-pointer text-md block py-1">Contact us</a>
               </li>
             </Link>
           </ul>

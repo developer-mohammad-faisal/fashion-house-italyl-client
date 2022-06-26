@@ -7,10 +7,10 @@ import Sandals from "./Sandals";
 
 const Products = () => {
   return (
-    <div className="border-0">
+    <div className="border-0 mt-5">
       <Tabs>
         <TabList>
-          <Tab> Clothing</Tab>
+          <Tab> Cloth</Tab>
           <Tab> Hand Bags</Tab>
           <Tab> Sandals</Tab>
         </TabList>

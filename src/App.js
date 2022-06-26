@@ -51,7 +51,7 @@ function App() {
             <Route path="/refund" element={<RefundPolicy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
-            <Route path="/information" element={<ContactInformation />} />
+            <Route path="/checkout" element={<ContactInformation />} />
             <Route path="/cart1/:productId" element={<Cart1 />} />
             <Route path="/cart2/:productId" element={<Cart2 />} />
             <Route path="/cart3/:productId" element={<Cart3 />} />
