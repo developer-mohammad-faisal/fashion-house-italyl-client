@@ -17,6 +17,9 @@ import NotFoundError from "./pages/NotFoundError/NotFoundError";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import Faq from "./components/Home/Faq/Faq";
+import ClothDetails from "./components/ProductDetails/ClothDetails";
+import HandBagDetails from "./components/ProductDetails/HandBagDetails";
+import SandalDetails from "./components/ProductDetails/SandalDetails";
 
 function App() {
   useEffect(() => {
@@ -39,6 +42,9 @@ function App() {
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/faq" element={<Faq />} />
+            <Route path="/clothDetails/:clothID" element={<ClothDetails />} />
+            <Route path="/handBagDetails/:handBagID" element={<HandBagDetails />} />
+            <Route path="/sandalDetails/:sandalID" element={<SandalDetails />} />
             <Route path="*" element={<NotFoundError />} />
           </Routes>
           <BrandInfo />

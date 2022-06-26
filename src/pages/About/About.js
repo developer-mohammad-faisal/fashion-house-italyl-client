@@ -64,6 +64,7 @@ const About = () => {
               <div className=" w-32 h-1 rounded-full bg-primary"></div>
             </div>
           </div>
+          
           <div className="flex flex-col items-center xl:flex-row  pt-8">
             <div className="flex-1">
               <img
@@ -100,6 +101,8 @@ const About = () => {
             </div>
           </div>
         </div>
+
+
         <div className="py-10 my-10">
           <div className="mb-10">
             <h1 className="lg:text-5xl text-3xl  text-center font-bold">
