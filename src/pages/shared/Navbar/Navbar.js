@@ -1131,16 +1131,6 @@ const Navbar = () => {
                 </a>
               </li>
             </Link>
-            <Link to="/faq">
-              <li className="lg:inline-block text-zinc-800   border-b-2 border-transparent hover:text-primary duration-300 ">
-                <a className=" md:border-none border-b-[1px] border-gray-400  w-40 md:w-full cursor-pointer text-md block py-1">Faq's</a>
-              </li>
-            </Link>
-            <Link to="/information">
-              <li className="lg:inline-block text-zinc-800   border-b-2 border-transparent hover:text-primary duration-300 ">
-                <a className=" md:border-none border-b-[1px] border-gray-400  w-40 md:w-full cursor-pointer text-md block py-1">inform</a>
-              </li>
-            </Link>
           </ul>
         </nav>
       </section>
