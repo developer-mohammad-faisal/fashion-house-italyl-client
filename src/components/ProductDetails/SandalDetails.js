@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import React, { Fragment } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { SandalsData } from "../../StaticData/CardData";
