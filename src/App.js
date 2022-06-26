@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./styles/main.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthProvider from "./context/AuthProvider";
@@ -15,6 +15,8 @@ import Terms from "./components/Home/Terms/Terms";
 import Privacy from "./components/Home/Privacy/Privacy";
 import NotFoundError from "./pages/NotFoundError/NotFoundError";
 import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+import PopUp from "./components/shared/PopUp";
 import "aos/dist/aos.css";
 import ClothDetails from "./components/ProductDetails/ClothDetails";
 import HandBagDetails from "./components/ProductDetails/HandBagDetails";
@@ -23,16 +25,21 @@ import ContactInformation from "./pages/Contact/ContactInformation";
 import Cart1 from "./components/Home/Cart/Cart1";
 import Cart2 from "./components/Home/Cart/Cart2";
 import Cart3 from "./components/Home/Cart/Cart3";
-
 function App() {
   useEffect(() => {
     AOS.init();
   }, []);
-
+  const [showPopUp, setShowPopUp] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setShowPopUp(true);
+    }, 1000);
+  }, []);
   return (
     <div>
       <AuthProvider>
         <BrowserRouter>
+          <PopUp showPopUp={showPopUp} setShowPopUp={setShowPopUp} />
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />

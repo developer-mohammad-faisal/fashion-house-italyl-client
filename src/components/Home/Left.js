@@ -8,7 +8,7 @@ import FeaturedPosts from "./FeaturedPosts/FeaturedPosts";
 const Left = () => {
   return (
     <Fragment>
-      <div>
+      <div className="">
         <Categories />
         <FeaturedProduct />
         <FeaturedPosts/>
