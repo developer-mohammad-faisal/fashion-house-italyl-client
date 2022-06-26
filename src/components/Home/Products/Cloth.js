@@ -1,10 +1,17 @@
 import React from "react";
 import { ClothingData } from "../../../StaticData/CardData";
+import { useNavigate } from "react-router-dom";
+
+
+
 
 const Cloth = () => {
-  const handleClick = (id) => {
-    console.log("Click to", id);
+const navigate = useNavigate()
+
+  const handleNavigate = (id) => {
+    navigate(`/clothDetails/${id}`)
   };
+
   return (
     <section id="products">
       <div className="main_product_card">
@@ -19,13 +26,13 @@ const Cloth = () => {
                     <span>Add to Wishlist</span>
                   </li>
                   <li>
-                    <button onClick={() => handleClick(`${product.id}`)}>
+                    <button>
                       <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                       <span>Add to Cart</span>
                     </button>
                   </li>
                   <li>
-                    <button onClick={() => handleClick(`${product.id}`)}>
+                    <button onClick={() => handleNavigate(product.id)}>
                       <i class="fa fa-eye" aria-hidden="true"></i>
                       <span>View Details</span>
                     </button>

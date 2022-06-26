@@ -1,7 +1,14 @@
 import React from "react";
 import { HandbagsData } from "../../../StaticData/CardData";
+import { useNavigate } from "react-router-dom";
 
 const HandBag = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (id) => {
+    navigate(`/handBagDetails/${id}`);
+  };
+
   return (
     <section id="products">
       <div className="main_product_card">
@@ -20,8 +27,10 @@ const HandBag = () => {
                     <span>Add to Cart</span>
                   </li>
                   <li>
-                    <i class="fa fa-eye" aria-hidden="true"></i>
-                    <span>View Details</span>
+                    <button onClick={() => handleNavigate(product.id)}>
+                      <i class="fa fa-eye" aria-hidden="true"></i>
+                      <span>View Details</span>
+                    </button>
                   </li>
                 </ul>
               </div>

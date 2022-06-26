@@ -1,16 +1,14 @@
 .dropdown2 {
   position: relative;
-  z-index: 400;
 }
 
 .dropdown-content1 {
   display: none;
-  position: fixed;
+  position: absolute;
   background-color: white;
   width: 1200px;
   left: 0;
-  top: 52px;
-  transition: 5s;
+  top: 70px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 35px 50px;
 }
