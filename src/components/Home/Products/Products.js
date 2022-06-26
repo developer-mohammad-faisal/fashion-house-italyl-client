@@ -10,27 +10,9 @@ const Products = () => {
     <div className="border-0">
       <Tabs>
         <TabList>
-          <Tab>
-            {" "}Clothing
-            {/* <button
-              autoFocus={true}
-              className="px-4 outline-none py-8 bg-transparent text-md hover:text-primary transition duration-150 focus:font-semibold focus:text-primary text-black "
-            >
-              Clothing
-            </button> */}
-          </Tab>
-          <Tab>
-            {" "}  Hand Bags
-           {/*  <button className="px-4 py-8 bg-transparent text-md hover:text-primary transition duration-150 focus:font-semibold focus:text-primary text-black ">
-              Hand Bags
-            </button> */}
-          </Tab>
-          <Tab>
-            {" "} Sandals
-            {/* <button className="px-4 py-8 bg-transparent text-md hover:text-primary transition duration-150 focus:font-semibold focus:text-primary text-black ">
-              Sandals
-            </button> */}
-          </Tab>
+          <Tab> Clothing</Tab>
+          <Tab> Hand Bags</Tab>
+          <Tab> Sandals</Tab>
         </TabList>
 
         <TabPanel>

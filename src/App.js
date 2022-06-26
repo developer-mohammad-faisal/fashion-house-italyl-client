@@ -17,7 +17,14 @@ import NotFoundError from "./pages/NotFoundError/NotFoundError";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import PopUp from "./components/shared/PopUp";
-
+import "aos/dist/aos.css";
+import ClothDetails from "./components/ProductDetails/ClothDetails";
+import HandBagDetails from "./components/ProductDetails/HandBagDetails";
+import SandalDetails from "./components/ProductDetails/SandalDetails";
+import ContactInformation from "./pages/Contact/ContactInformation";
+import Cart1 from "./components/Home/Cart/Cart1";
+import Cart2 from "./components/Home/Cart/Cart2";
+import Cart3 from "./components/Home/Cart/Cart3";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -44,6 +51,13 @@ function App() {
             <Route path="/refund" element={<RefundPolicy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
+            <Route path="/information" element={<ContactInformation />} />
+            <Route path="/cart1/:productId" element={<Cart1 />} />
+            <Route path="/cart2/:productId" element={<Cart2 />} />
+            <Route path="/cart3/:productId" element={<Cart3 />} />
+            <Route path="/clothDetails/:clothID" element={<ClothDetails />} />
+            <Route path="/handBagDetails/:handBagID" element={<HandBagDetails />} />
+            <Route path="/sandalDetails/:sandalID" element={<SandalDetails />} />
             <Route path="*" element={<NotFoundError />} />
           </Routes>
           <BrandInfo />
