@@ -25,6 +25,9 @@ import ContactInformation from "./pages/Contact/ContactInformation";
 import Cart1 from "./components/Home/Cart/Cart1";
 import Cart2 from "./components/Home/Cart/Cart2";
 import Cart3 from "./components/Home/Cart/Cart3";
+import Wrapper from "./components/Wrapper/Wrapper";
+
+
 function App() {
   useEffect(() => {
     AOS.init();
@@ -35,33 +38,43 @@ function App() {
       setShowPopUp(true);
     }, 1000);
   }, []);
+
+ 
   return (
     <div>
       <AuthProvider>
         <BrowserRouter>
-          <PopUp showPopUp={showPopUp} setShowPopUp={setShowPopUp} />
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/refund" element={<RefundPolicy />} />
-            <Route path="/terms" element={<Terms />} />
-            <Route path="/privacy" element={<Privacy />} />
-            <Route path="/checkout" element={<ContactInformation />} />
-            <Route path="/cart1/:productId" element={<Cart1 />} />
-            <Route path="/cart2/:productId" element={<Cart2 />} />
-            <Route path="/cart3/:productId" element={<Cart3 />} />
-            <Route path="/clothDetails/:clothID" element={<ClothDetails />} />
-            <Route path="/handBagDetails/:handBagID" element={<HandBagDetails />} />
-            <Route path="/sandalDetails/:sandalID" element={<SandalDetails />} />
-            <Route path="*" element={<NotFoundError />} />
-          </Routes>
-          <BrandInfo />
-          <Footer></Footer>
+          <Wrapper>
+            <PopUp showPopUp={showPopUp} setShowPopUp={setShowPopUp} />
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/refund" element={<RefundPolicy />} />
+              <Route path="/terms" element={<Terms />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/checkout" element={<ContactInformation />} />
+              <Route path="/cart1/:productId" element={<Cart1 />} />
+              <Route path="/cart2/:productId" element={<Cart2 />} />
+              <Route path="/cart3/:productId" element={<Cart3 />} />
+              <Route path="/clothDetails/:clothID" element={<ClothDetails />} />
+              <Route
+                path="/handBagDetails/:handBagID"
+                element={<HandBagDetails />}
+              />
+              <Route
+                path="/sandalDetails/:sandalID"
+                element={<SandalDetails />}
+              />
+              <Route path="*" element={<NotFoundError />} />
+            </Routes>
+            <BrandInfo />
+            <Footer></Footer>
+          </Wrapper>
         </BrowserRouter>
       </AuthProvider>
     </div>
