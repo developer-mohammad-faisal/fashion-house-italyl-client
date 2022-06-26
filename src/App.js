@@ -15,11 +15,13 @@ import Terms from './components/Home/Terms/Terms'
 import Privacy from './components/Home/Privacy/Privacy'
 import NotFoundError from "./pages/NotFoundError/NotFoundError";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+import "aos/dist/aos.css";
 import Faq from "./components/Home/Faq/Faq";
 import ClothDetails from "./components/ProductDetails/ClothDetails";
 import HandBagDetails from "./components/ProductDetails/HandBagDetails";
 import SandalDetails from "./components/ProductDetails/SandalDetails";
+import ContactInformation from "./pages/Contact/ContactInformation";
+import Cart from "./components/Home/Cart/Cart";
 
 function App() {
   useEffect(() => {
@@ -41,6 +43,8 @@ function App() {
             <Route path="/refund" element={<RefundPolicy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
+            <Route path="/information" element={<ContactInformation />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/clothDetails/:clothID" element={<ClothDetails />} />
             <Route path="/handBagDetails/:handBagID" element={<HandBagDetails />} />
