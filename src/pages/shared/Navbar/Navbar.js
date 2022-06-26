@@ -37,7 +37,6 @@ const Navbar = () => {
       .then((res) => res.json())
       .then((data) => setMenuItem(data));
   }, []);
-  // console.log(menuItem[0].collection[0].bags);
   return (
     <React.Fragment>
       <section>
