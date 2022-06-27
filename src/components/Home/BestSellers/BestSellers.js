@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import "../../../styles/components/swiperSlider.css";
 
 // import required modules
-import { Navigation } from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper";
 import { BestSellerData } from "../../../StaticData/ProductData";
 
 const BestSellers = () => {
@@ -20,7 +20,20 @@ const BestSellers = () => {
           <h1 className="text-[18px] font-bold "> Best Sellers</h1>
           <div className="w-20 h-[2px] bg-black"></div>
         </div>
-        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          modules={[Pagination, Autoplay]}
+          className="mySwiper"
+        >
           {BestSellerData.map((product) => (
             <SwiperSlide key={product.id}>
               <div className="cursor-pointer text-center">
@@ -29,7 +42,7 @@ const BestSellers = () => {
                 </div>
                 <div className="py-5">
                   <h1 className="font-semibold text-[20px]">{product.name}</h1>
-                  <h2 className="text-[20px] ">${product.price}</h2>
+                  <h2 className="text-[20px] ">€{product.price}</h2>
                 </div>
               </div>
             </SwiperSlide>

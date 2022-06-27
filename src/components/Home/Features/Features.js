@@ -7,9 +7,6 @@ const Features = () => {
       <section className="bg-white divide-y divide-dashed">
         {FeatureData.map((feature) => (
           <div
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="1000"
             key={feature.id}
           >
             <div className="  flex justify-center items-center gap-x-5 py-4 ">

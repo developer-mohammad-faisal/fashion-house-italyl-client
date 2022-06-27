@@ -124,7 +124,7 @@ const Footer = () => {
       </footer>
       <div>
         <h1 className="bg-black text-white text-center py-3 text-[15px] font-sans">
-          Copyright © 2022, Mabel-Fashion Powered by Shopify Powered by Shopify
+          Copyright © 2022, Mabel-Fashion Powered by Developer Build
         </h1>
       </div>
     </div>
