@@ -7,7 +7,7 @@ import clothes from "../../../assets/images/flashSale/sale5.jpg";
 const ModernFashion = () => {
   return (
     <Fragment>
-      <section data-aos="fade-up" data-aos-duration="2000" className="py-10 grid md:grid-cols-1 lg:grid-cols-2 gap-2 px-2">
+      <section className="py-10 grid md:grid-cols-1 lg:grid-cols-2 gap-2 px-2">
         <div className="flex items-start gap-0 lg:gap-5 bg-white p-3 rounded">
           <div className="w-[50%] mr-2 ">
             <img src={handbags} alt="" />

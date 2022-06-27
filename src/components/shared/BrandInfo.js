@@ -7,8 +7,7 @@ const BrandInfo = () => {
   return (
     <div className="bg-white py-10">
       <div
-        data-aos="fade-up"
-        data-aos-duration="2000"
+
         className=" container grid grid-cols-1 md:grid-cols-4 gap-5 "
       >
         <div className="w-4/6 lg:w-full mx-auto lg:mx-0 flex flex-col lg:flex-row  text-center lg:text-left items-center gap-3">

@@ -12,19 +12,19 @@ const Categories = () => {
           <ul className="divide-y divide-dashed">
             <li className="py-3 font-semibold">
               {" "}
-              <span>&#8226;</span> Long Top
+              <span>&#8226;</span> Hand Bags
             </li>
             <li className="py-3 font-semibold">
               {" "}
-              <span>&#8226;</span> T-shirts
-            </li>
-            <li className="py-3 font-semibold">
-              {" "}
-              <span>&#8226;</span> Jeans
+              <span>&#8226;</span> Clothing
             </li>
             <li className="py-3 font-semibold">
               {" "}
               <span>&#8226;</span> Sandals
+            </li>
+            <li className="py-3 font-semibold">
+              {" "}
+              <span>&#8226;</span> Handkerchief
             </li>
             <li className="py-3 font-semibold">
               {" "}
@@ -32,7 +32,7 @@ const Categories = () => {
             </li>
             <li className="py-3 font-semibold">
               {" "}
-              <span>&#8226;</span> Trendy Wear
+              <span>&#8226;</span> Makeup
             </li>
             <li className="py-3 font-semibold">
               {" "}
@@ -40,7 +40,7 @@ const Categories = () => {
             </li>
             <li className="py-3 font-semibold">
               {" "}
-              <span>&#8226;</span> Sandals
+              <span>&#8226;</span> Rain Coat
             </li>
           </ul>
         </div>
