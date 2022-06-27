@@ -45,17 +45,18 @@ const ClothDetails = () => {
                     </h2>
                   </div>
                   <div className="flex item-center space-x-4 py-4">
-                    <button
+                    {/* <button
                       onClick={() => navigate(`/cart1/${match.id}`)}
                       className="text-white px-5 py-3 bg-stone-900 border-none rounded-none font-normal transform duration-500 hover:bg-primary"
                     >
                       {" "}
                       <FontAwesomeIcon icon={faCartArrowDown} /> Add to Cart
-                    </button>
+                    </button> */}
                     <button
                       onClick={() => navigate(`/cart1/${match.id}`)}
-                      className="text-white px-5 py-3 bg-stone-900 border-none rounded-none font-normal transform duration-500 hover:bg-primary"
+                      className="text-white px-5 py-3 bg-stone-900 border-none rounded-none font-normal transform duration-500 hover:bg-primary flex items-center gap-3"
                     >
+                      <img src="http://www.deansgarage.com/wp-content/uploads/Amazon-A-logo.png" className='w-5 h-5' alt="" />
                       Buy it Now
                     </button>
                   </div>
