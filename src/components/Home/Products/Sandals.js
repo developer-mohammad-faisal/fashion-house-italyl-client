@@ -16,7 +16,7 @@ const Sandals = () => {
         {SandalsData.map((product, i) => (
           <div key={product.id} className="card">
             <div className="imgBx">
-              <img src={product.img1} alt="" />
+              <img onClick={() => handleNavigate(product.id)} src={product.img1} alt="" />
               <div className="action">
                 <ul>
                   <li>
