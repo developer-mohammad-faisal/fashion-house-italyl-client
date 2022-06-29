@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ClothingData } from "../../../StaticData/CardData";
 import { useNavigate } from "react-router-dom";
 
@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 const Cloth = () => {
   const navigate = useNavigate()
-
+  const [over, setOver] = useState(false);
   const handleNavigate = (id) => {
     navigate(`/clothDetails/${id}`)
   };
@@ -18,7 +18,7 @@ const Cloth = () => {
         {ClothingData.map((product, i) => (
           <div key={product.id} className="card">
             <div className="imgBx">
-              <img src={product.img1} alt="" />
+              <img onClick={() => handleNavigate(product.id)} src={product.img1} alt="" />
               <div className="action">
                 <ul>
                   <li>
