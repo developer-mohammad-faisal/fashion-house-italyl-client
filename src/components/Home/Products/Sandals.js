@@ -38,7 +38,7 @@ const Sandals = () => {
             </div>
             <div className="content">
               <div className="productName">
-                <h3 className="text-2xl">{product.name.slice(0, 15)}...</h3>
+                <h3 className="text-2xl">{product.name.slice(0, 27)}{product.name.length > 27 ? '...' : ' '}</h3>
               </div>
               <div className="price_rating">
                 <h2 className="text-xl font-sans">€{product.price}</h2>
