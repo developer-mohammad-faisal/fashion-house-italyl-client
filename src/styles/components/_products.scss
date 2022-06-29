@@ -36,6 +36,7 @@
         overflow: hidden;
 
         img {
+
           position: absolute;
           top: 0;
           left: 0;
@@ -115,15 +116,26 @@
         }
       }
 
+
+
+
+
+
       .content {
+
         padding: 10px;
 
         .productName {
           h3 {
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 700;
             color: #333;
             margin: 5px 0;
+          }
+
+          h3:hover {
+            color: #ee156a;
+
           }
         }
 
@@ -133,8 +145,7 @@
           align-items: center;
 
           h2 {
-            font-size: 20px;
-            color: #ee156a;
+            font-size: 16px;
             font-weight: 500;
           }
 
@@ -148,9 +159,15 @@
             .empty {
               color: #ccc;
             }
+
+            .content:hover {
+              color: #ee156a;
+            }
           }
         }
+
       }
+
     }
   }
 }

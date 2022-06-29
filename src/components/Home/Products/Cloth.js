@@ -18,6 +18,7 @@ const Cloth = () => {
         {ClothingData.map((product, i) => (
           <div key={product.id} className="card">
             <div className="imgBx">
+
               <img onClick={() => handleNavigate(product.id)} src={product.img1} alt="" />
               <div className="action">
                 <ul>
@@ -42,7 +43,7 @@ const Cloth = () => {
             </div>
             <div className="content">
               <div className="productName">
-                <h3 className="text-2xl">{product.name.slice(0, 15)}...</h3>
+                <h3 className="text-2xl">{product.name}</h3>
               </div>
               <div className="price_rating">
                 <h2 className="text-lg font-sans">€{product.price}</h2>

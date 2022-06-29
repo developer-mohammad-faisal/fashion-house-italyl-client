@@ -30,7 +30,7 @@ const Banner = () => {
         {" "}
         {/* <SwiperSlide>
           <div
-            style={{ backgroundImage: `url(${accesories})`, backgroundSize:'100%'}}
+            style={{ backgroundImage: `url(${accesories})`, backgroundSize: '100%' }}
             className="bg-no-repeat h-full w-full bg-center"
           >
             <div className="pl-0 md:pl-16 w-full md:w-1/2 md:bg-transparent bg-[#e0e2ebad] flex items-center md:items-start justify-center h-full flex-col ">
@@ -50,10 +50,10 @@ const Banner = () => {
               <p
                 className="text-gray-600 hidden md:block"
               >
-               What you wear is how you present yourself to the world, especially today, when human contacts are so quick.{" "}
+                What you wear is how you present yourself to the world, especially today, when human contacts are so quick.{" "}
               </p>
               <button
-                className="bg-[#1B3C7A] btn-sm hover:bg-primary transition-all duration-500 ease-in-out font-semibold text-sm md:mt-5 mt-2 text-white "
+                className="bg-[#789bdf] btn-sm  hover:bg-primary transition-all duration-500 ease-in-out font-semibold text-sm md:mt-5 mt-2 text-black "
               >
                 Shop Now
               </button>
@@ -136,10 +136,12 @@ const Banner = () => {
                 >
                   Shop Now
                 </button>
-              </Fade>
+
+              </div>
             </div>
           </div>{" "}
         </SwiperSlide>
+        
       </Swiper>
     </div>
   );
