@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 
 
 
-
 const Cloth = () => {
   const navigate = useNavigate()
 
@@ -18,7 +17,8 @@ const Cloth = () => {
         {ClothingData.map((product, i) => (
           <div key={product.id} className="card">
             <div className="imgBx">
-              <img src={product.img1} alt="" />
+              <img className="main-img" src={product.img1} alt="" />
+              <img className="hover-img" src={product.img2} alt="" />
               <div className="action">
                 <ul>
                   <li>
