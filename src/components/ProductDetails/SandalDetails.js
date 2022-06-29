@@ -8,8 +8,8 @@ import email from "../../assets/images/icon/footerImg/social-icon/email.png";
 import linkedin from "../../assets/images/icon/footerImg/social-icon/linkedins.png";
 import twitter from "../../assets/images/icon/footerImg/social-icon/twitters.png";
 import instagram from "../../assets/images/icon/footerImg/social-icon/instagram.png";
-import Right from "../Home/Right";
-import Left from "../Home/Left";
+import Categories from "../Home/Categories/Categories";
+import Features from "../Home/Features/Features";
 
 const SandalDetails = () => {
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const SandalDetails = () => {
       <div className="bg-[#F7F7F7] container py-10">
         <div className="flex justify-center items-start gap-5">
           <section className=" w-1/6 h-full hidden lg:block">
-            <Left />
+            <Categories />
           </section>
           <section className=" w-full h-full lg:w-4/6 ">
             <section>
@@ -73,7 +73,7 @@ const SandalDetails = () => {
             </section>
           </section>
           <section className=" w-1/6  h-full hidden lg:block">
-            <Right />
+            <Features />
           </section>
         </div>
       </div>

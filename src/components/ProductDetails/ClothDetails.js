@@ -12,6 +12,8 @@ import instagram from "../../assets/images/icon/footerImg/social-icon/instagram.
 import "../../styles/components/swiperThum.scss";
 import Left from "../Home/Left";
 import Right from "../Home/Right";
+import Categories from "../Home/Categories/Categories";
+import Features from "../Home/Features/Features";
 
 const ClothDetails = () => {
   const navigate = useNavigate();
@@ -23,7 +25,7 @@ const ClothDetails = () => {
       <div className="bg-[#F7F7F7] container py-10">
         <div className="flex justify-center items-start gap-5">
           <section className=" w-1/6 h-full hidden lg:block">
-            <Left />
+            <Categories />
           </section>
           <section className=" w-full h-full lg:w-4/6 ">
             <section>
@@ -76,7 +78,7 @@ const ClothDetails = () => {
             </section>
           </section>
           <section className=" w-1/6  h-full hidden lg:block">
-            <Right />
+            <Features />
           </section>
         </div>
       </div>
