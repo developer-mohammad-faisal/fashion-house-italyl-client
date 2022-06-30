@@ -4,14 +4,16 @@ import { faCartArrowDown, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate, useParams } from "react-router-dom";
 import { ClothingData } from "../../StaticData/CardData";
-import facebook from "../../assets/images/icon/footerImg/social-icon/facebook.png";
-import email from "../../assets/images/icon/footerImg/social-icon/email.png";
-import linkedin from "../../assets/images/icon/footerImg/social-icon/linkedins.png";
-import twitter from "../../assets/images/icon/footerImg/social-icon/twitters.png";
-import instagram from "../../assets/images/icon/footerImg/social-icon/instagram.png";
+import facebook from "../../assets/images/iconsCircle/facebook-circular-logo.png";
+import email from "../../assets/images/iconsCircle/email.png";
+import linkedin from "../../assets/images/iconsCircle/linkedin.png";
+import twitter from "../../assets/images/iconsCircle/twitter.png";
+import instagram from "../../assets/images/iconsCircle/instagram.png";
 import "../../styles/components/swiperThum.scss";
 import Left from "../Home/Left";
 import Right from "../Home/Right";
+import Categories from "../Home/Categories/Categories";
+import Features from "../Home/Features/Features";
 
 const ClothDetails = () => {
   const navigate = useNavigate();
@@ -23,7 +25,7 @@ const ClothDetails = () => {
       <div className="bg-[#F7F7F7] container py-10">
         <div className="flex justify-center items-start gap-5">
           <section className=" w-1/6 h-full hidden lg:block">
-            <Left />
+            <Categories />
           </section>
           <section className=" w-full h-full lg:w-4/6 ">
             <section>
@@ -64,19 +66,20 @@ const ClothDetails = () => {
                     {" "}
                     <FontAwesomeIcon icon={faHeart} /> <span>Add to wishlist</span>{" "}
                   </button>
-                  <div className="flex space-x-[4px] pt-4 cur">
-                    <img src={facebook} alt="facebook" />
-                    <img src={email} alt="email" />
-                    <img src={linkedin} alt="linkedin" />
-                    <img src={twitter} alt="twitter" />
-                    <img src={instagram} alt="instagram" />
+                  <div className="flex space-x-[7px] pt-4 cur">
+                    <img className="w-[40px] h-[40px]" src={facebook} alt="facebook" />
+                    <img className="w-[40px] h-[40px]" src={email} alt="email" />
+                    <img className="w-[40px] h-[40px]" src={linkedin} alt="linkedin" />
+                    <img className="w-[40px] h-[40px]" src={twitter} alt="twitter" />
+                    <img className="w-[40px] h-[40px]" src={instagram} alt="instagram" />
+
                   </div>
                 </div>
               </div>
             </section>
           </section>
           <section className=" w-1/6  h-full hidden lg:block">
-            <Right />
+            <Features />
           </section>
         </div>
       </div>
