@@ -34,7 +34,7 @@ const Banner = () => {
             className="bg-no-repeat h-full w-full bg-center"
           >
             <div className="pl-0 md:pl-16 w-full md:w-1/2 md:bg-transparent bg-[#e0e2ebad] flex items-center md:items-start justify-center h-full flex-col ">
-              <Fade bottom>
+              <Fade top>
               <h1
                 className="text-md md:text-xl text-gray-700"
               >
@@ -69,28 +69,28 @@ const Banner = () => {
             <div className="flex h-full ">
               <div className="w-1/2 hidden md:block"></div>
               <div className="w-full md:w-1/2 md:bg-transparent bg-[#ffffff8e]  flex md:items-start items-center justify-center h-[100%] flex-col ">
-                <Fade bottom>
+                <Fade top>
                   <h1
                     className="text-md md:text-xl text-gray-700 "
                   >
                     New Collections
                   </h1>
                 </Fade>
-                <Fade bottom>
+                <Fade top>
                   <div className="text-3xl md:text-2xl flex flex-row lg:flex-col gap-3 my-1 md:my-4  font-bold text-[#983441]">
                     <p>
                       Women's{" "}
                       Fashion</p>
                   </div>
                 </Fade>
-                <Fade bottom>
+                <Fade top>
                   <p
                     className="text-gray-600 hidden md:block pr-5"
                   >
                     Fashion has the ability to change and shape lives through its personal connection to us all.{" "}
                   </p>
                 </Fade>
-                <Fade bottom>
+                <Fade top>
                   <button
                     className="bg-[#983441] btn-sm hover:bg-primary transition-all duration-500 ease-in-out text-sm font-semibold mt-2 md:mt-5 text-white"
                   >
@@ -108,14 +108,14 @@ const Banner = () => {
             className="bg-no-repeat bg-center bg-origin-padding w-full h-full "
           >
             <div className="pl-0 md:pl-16 w-full md:w-1/2 md:bg-transparent bg-[#e0e2ebad]  flex items-center md:items-start justify-center h-full flex-col ">
-              <Fade bottom>
+              <Fade top>
                 <h1
                   className="text-md md:text-xl text-gray-700"
                 >
                   New Arrivals
                 </h1>
               </Fade>
-              <Fade bottom>
+              <Fade top>
                 <h1
                   className="text-3xl md:text-2xl my-2 md:my-3 font-bold text-[#BC5525]"
                 >
@@ -123,18 +123,19 @@ const Banner = () => {
                   <span className="hidden md:block">Accessories</span>
                 </h1>
               </Fade>
-              <Fade bottom>
+              <Fade top>
                 <p
                   className="text-gray-600 hidden md:block"
                 >
                   Hey There! Checkout our new arrivals or latest products and try them out. {" "}
                 </p>
               </Fade>
-              <Fade bottom>
+              <Fade top>
                 <button
                   className="bg-[#F0E5D2] text-sm btn-sm hover:bg-primary transition-all duration-500 ease-in-out font-semibold md:mt-5 mt-2 text-black"
                 >
                   Shop Now
+
                 </button>
               </Fade>
             </div>
