@@ -12,6 +12,8 @@ import instagram from "../../assets/images/icon/footerImg/social-icon/instagram.
 import "../../styles/components/swiperThum.scss";
 import Left from "../Home/Left";
 import Right from "../Home/Right";
+import Categories from "../Home/Categories/Categories";
+import Features from "../Home/Features/Features";
 
 const ClothDetails = () => {
   const navigate = useNavigate();
@@ -23,7 +25,7 @@ const ClothDetails = () => {
       <div className="bg-[#F7F7F7] container py-10">
         <div className="flex justify-center items-start gap-5">
           <section className=" w-1/6 h-full hidden lg:block">
-            <Left />
+            <Categories />
           </section>
           <section className=" w-full h-full lg:w-4/6 ">
             <section>
@@ -45,17 +47,18 @@ const ClothDetails = () => {
                     </h2>
                   </div>
                   <div className="flex item-center space-x-4 py-4">
-                    <button
+                    {/* <button
                       onClick={() => navigate(`/cart1/${match.id}`)}
                       className="text-white px-5 py-3 bg-stone-900 border-none rounded-none font-normal transform duration-500 hover:bg-primary"
                     >
                       {" "}
                       <FontAwesomeIcon icon={faCartArrowDown} /> Add to Cart
-                    </button>
+                    </button> */}
                     <button
                       onClick={() => navigate(`/cart1/${match.id}`)}
-                      className="text-white px-5 py-3 bg-stone-900 border-none rounded-none font-normal transform duration-500 hover:bg-primary"
+                      className="text-white px-5 py-3 bg-stone-900 border-none rounded-none font-normal transform duration-500 hover:bg-primary flex items-center gap-3"
                     >
+                      <img src="http://www.deansgarage.com/wp-content/uploads/Amazon-A-logo.png" className='w-5 h-5' alt="" />
                       Buy it Now
                     </button>
                   </div>
@@ -75,7 +78,7 @@ const ClothDetails = () => {
             </section>
           </section>
           <section className=" w-1/6  h-full hidden lg:block">
-            <Right />
+            <Features />
           </section>
         </div>
       </div>

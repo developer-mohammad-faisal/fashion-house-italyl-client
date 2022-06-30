@@ -10,6 +10,8 @@ import twitter from "../../assets/images/icon/footerImg/social-icon/twitters.png
 import instagram from "../../assets/images/icon/footerImg/social-icon/instagram.png";
 import Right from "../Home/Right";
 import Left from "../Home/Left";
+import Categories from "../Home/Categories/Categories";
+import Features from "../Home/Features/Features";
 
 const HandBagDetails = () => {
   const navigate = useNavigate();
@@ -21,7 +23,7 @@ const HandBagDetails = () => {
       <div className="bg-[#F7F7F7] container py-10">
         <div className="flex justify-center items-start gap-5">
           <section className=" w-1/6 h-full hidden lg:block">
-            <Left />
+            <Categories />
           </section>
           <section className=" w-full h-full lg:w-4/6 ">
             <section>
@@ -73,7 +75,7 @@ const HandBagDetails = () => {
             </section>
           </section>
           <section className=" w-1/6  h-full hidden lg:block">
-            <Right />
+            <Features />
           </section>
         </div>
       </div>

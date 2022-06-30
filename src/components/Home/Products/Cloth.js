@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ClothingData } from "../../../StaticData/CardData";
 import { useNavigate } from "react-router-dom";
 
@@ -6,8 +6,8 @@ import { useNavigate } from "react-router-dom";
 
 
 const Cloth = () => {
-const navigate = useNavigate()
-
+  const navigate = useNavigate()
+  const [over, setOver] = useState(false);
   const handleNavigate = (id) => {
     navigate(`/clothDetails/${id}`)
   };
@@ -18,7 +18,8 @@ const navigate = useNavigate()
         {ClothingData.map((product, i) => (
           <div key={product.id} className="card">
             <div className="imgBx">
-              <img src={product.img1} alt="" />
+
+              <img onClick={() => handleNavigate(product.id)} src={product.img1} alt="" />
               <div className="action">
                 <ul>
                   <li>
@@ -42,17 +43,17 @@ const navigate = useNavigate()
             </div>
             <div className="content">
               <div className="productName">
-                <h3 className="text-2xl">{product.name.slice(0, 15)}...</h3>
+                <h3 className="text-2xl">{product.name}</h3>
               </div>
               <div className="price_rating">
-                <h2 className="text-xl font-sans">${product.price}</h2>
-                <div className="rating">
+                <h2 className="text-lg font-sans">€{product.price}</h2>
+                {/* <div className="rating">
                   <i className="fa fa-star" aria-hidden="true"></i>
                   <i className="fa fa-star" aria-hidden="true"></i>
                   <i className="fa fa-star" aria-hidden="true"></i>
                   <i className="fa fa-star" aria-hidden="true"></i>
                   <i className="fa fa-star" aria-hidden="true"></i>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

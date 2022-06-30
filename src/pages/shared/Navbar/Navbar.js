@@ -432,368 +432,31 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-            <li className=" hidden lg:block ">
-              <div class="dropdown1 ">
-                <span className="flex py-[14px] lg:px-5  cursor-pointer  hover:text-primary transition-all duration-700  font-semibold justify-between items-center gap-2">
-                  Trendy Wear{" "}
-                  <FontAwesomeIcon
-                    className="text-sm font-bold"
-                    icon={faAngleDown}
-                  />{" "}
-                </span>
-                <div class="dropdown-content1 ">
-                  <div className="flex">
-                    <div className="flex-1 flex items-start">
-                      <div className="w-2/6">
-                        <h2 className=" font-bold uppercase mb-5 text-primary">
-                          t-shirt{" "}
-                        </h2>
+            
+            <Link to="/terms">
+              <li className=" ">
+                <a className="pt-[35px]  dura lg:pt-[14px] pb-[14px]  lg:px-5 font-semibold md:border-none  cursor-pointer hover:text-primary transition-all duration-700   inline-block text-md  ">
+                  Terms
+                </a>
+              </li>
+            </Link>
 
-                        <div className="space-y-3 animate-div">
-                          {menuItem[0]?.collection[0]?.bags?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2 cursor-pointer  text-[14px]"
-                            >
-                              {" "}
-                              <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                      <div className="w-2/6">
-                        <h2 className="uppercase font-bold mb-5 text-primary">
-                          frock
-                        </h2>
+            <Link to="/blogs">
+              <li className=" ">
+                <a className="pt-[35px]  dura lg:pt-[14px] pb-[14px]  lg:px-5 font-semibold md:border-none  cursor-pointer hover:text-primary transition-all duration-700   inline-block text-md  ">
+                  Blogs
+                </a>
+              </li>
+            </Link>
+            
+            <Link to="/be-seller">
+              <li className=" ">
+                <a className="pt-[35px]  dura lg:pt-[14px] pb-[14px]  lg:px-5 font-semibold md:border-none  cursor-pointer hover:text-primary transition-all duration-700   inline-block text-md  ">
+                  Be seller
+                </a>
+              </li>
+            </Link>
 
-                        <div className="space-y-3 animate-div">
-                          {menuItem[0]?.collection[1]?.skirt?.map(
-                            (x, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center gap-2  cursor-pointer text-[14px]"
-                              >
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                                <p className="hover:text-primary  hover:font-semibold">
-                                  {x}
-                                </p>
-                              </div>
-                            )
-                          )}
-                        </div>
-                      </div>
-                      <div className="w-2/6">
-                        <h2 className="uppercase font-bold mb-5 text-primary">
-                          sleveless top
-                        </h2>
-
-                        <div className="space-y-3 animate-div">
-                          {menuItem[0]?.collection[2]?.gown?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2 cursor-pointer  text-[14px]"
-                            >
-                              {" "}
-                              <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <div className="flex items-start justify-end gap-5">
-                        <div className="animate-img">
-                          <img
-                            src={img2}
-                            id="img2"
-                            className="h-[330px] block"
-                            alt=""
-                          />
-                          <div className="text-center mt-4">
-                            <h2 className="uppercase font-semibold">
-                              Hand bags
-                            </h2>
-                            <p className="">$530.00</p>
-                          </div>
-                        </div>
-                        <div className="animate-img">
-                          <img src={img3} alt="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li className="hidden lg:block ">
-              <div class="dropdown1 ">
-                <span className="flex cursor-pointer  py-[14px] lg:px-5   hover:text-primary transition-all duration-700  font-semibold justify-between items-center gap-2">
-                  Sandals{" "}
-                  <FontAwesomeIcon
-                    className="text-sm font-bold"
-                    icon={faAngleDown}
-                  />{" "}
-                </span>
-                <div class="dropdown-content4 ">
-                  <div className="flex bg-white">
-                    <div className="flex-1 flex items-start ">
-                      <div className="w-2/6">
-                        <div>
-                          <h2 className=" font-bold uppercase mb-5 text-primary">
-                            KITTEN HEEL
-                          </h2>
-
-                          <div className="space-y-3 animate-div">
-                            {menuItem[1]?.shop[0]?.bags?.map((x, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center gap-2 cursor-pointer  text-[14px]"
-                              >
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                                <p className="hover:text-primary  hover:font-semibold">
-                                  {x}
-                                </p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                        <div className="mt-10">
-                          <h2 className=" font-bold uppercase mb-5 text-primary">
-                            mules
-                          </h2>
-
-                          <div className="space-y-3 animate-div">
-                            {menuItem[1]?.shop[0]?.bags?.map((x, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center  cursor-pointer gap-2 text-[14px]"
-                              >
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                                <p className="hover:text-primary  hover:font-semibold">
-                                  {x}
-                                </p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                      <div className="w-2/6">
-                        <div>
-                          <h2 className="uppercase font-bold mb-5 text-primary">
-                            ANKLE STRAP HEELS
-                          </h2>
-
-                          <div className="space-y-3 animate-div">
-                            {menuItem[1]?.shop[1]?.sandals?.map((x, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center cursor-pointer  gap-2 text-[14px]"
-                              >
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                                <p className="hover:text-primary  hover:font-semibold">
-                                  {x}
-                                </p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                        <div className="mt-10">
-                          <h2 className="uppercase font-bold mb-5 text-primary">
-                            CORK HIGH HEELS
-                          </h2>
-
-                          <div className="space-y-3 animate-div">
-                            {menuItem[1]?.shop[1]?.sandals?.map((x, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center cursor-pointer  gap-2 text-[14px]"
-                              >
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                                <p className="hover:text-primary  hover:font-semibold">
-                                  {x}
-                                </p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                      <div className="w-2/6">
-                        <div>
-                          <h2 className="uppercase font-bold mb-5 text-primary">
-                            PLATFORM HEELS
-                          </h2>
-
-                          <div className="space-y-3 animate-div">
-                            {menuItem[1]?.shop[2]?.heel?.map((x, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center  cursor-pointer gap-2 text-[14px]"
-                              >
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                                <p className="hover:text-primary  hover:font-semibold">
-                                  {x}
-                                </p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                        <div className="mt-10">
-                          <h2 className="uppercase font-bold mb-5 text-primary">
-                            CORSET HEELS
-                          </h2>
-
-                          <div className="space-y-3 animate-div">
-                            {menuItem[1]?.shop[2]?.heel?.map((x, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center cursor-pointer  gap-2 text-[14px]"
-                              >
-                                {" "}
-                                <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                                <p className="hover:text-primary  hover:font-semibold">
-                                  {x}
-                                </p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <div className="flex items-start justify-end gap-2">
-                        <div className="flex flex-col gap-2 animate-img">
-                          <img src={img4} alt="" />
-                          <img src={img5} alt="" />
-                        </div>
-                        <div className="animate-img">
-                          <img src={img6} alt="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li className="hidden lg:block ">
-              <div class="dropdown1 ">
-                <span className="flex cursor-pointer  py-[14px] lg:px-5 hover:text-primary transition-all duration-700  font-semibold justify-between items-center gap-2">
-                  Accessories{" "}
-                  <FontAwesomeIcon
-                    className="text-sm font-bold"
-                    icon={faAngleDown}
-                  />{" "}
-                </span>
-
-                <div class="dropdown-content5 ">
-                  <div className="">
-                    <div className="grid grid-cols-4">
-                      <div className="">
-                        <h2 className=" font-bold uppercase mb-5 text-primary">
-                          earrings{" "}
-                        </h2>
-
-                        <div className="space-y-3 animate-div">
-                          {menuItem[1]?.shop[0]?.bags?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2  cursor-pointer text-[14px]"
-                            >
-                              {" "}
-                              <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                      <div className="">
-                        <h2 className="uppercase font-bold mb-5 text-primary">
-                          bangles
-                        </h2>
-
-                        <div className="space-y-3 animate-div">
-                          {menuItem[1]?.shop[1].sandals?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2  cursor-pointer text-[14px]"
-                            >
-                              {" "}
-                              <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                      <div className="">
-                        <h2 className="uppercase font-bold mb-5 text-primary">
-                          watch
-                        </h2>
-
-                        <div className="space-y-3 animate-div">
-                          {menuItem[1]?.shop[2]?.heel?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2 cursor-pointer  text-[14px]"
-                            >
-                              {" "}
-                              <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                      <div className="">
-                        <h2 className="uppercase font-bold mb-5 text-primary">
-                          belt
-                        </h2>
-
-                        <div className="space-y-3 animate-div">
-                          {menuItem[1]?.shop[3]?.shoes?.map((x, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-2  cursor-pointer text-[14px]"
-                            >
-                              {" "}
-                              <p className="border-[1px]  border-primary rounded-full h-2 w-2"></p>{" "}
-                              <p className="hover:text-primary  hover:font-semibold">
-                                {x}
-                              </p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="flex mt-7 justify-between gap-5">
-                        <div className="flex-1  animate-img">
-                          <img src={img7} className="" alt="" />
-                        </div>
-                        <div className="flex-1  animate-img">
-                          <img src={img8} className="" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
             <Link to="/about">
               <li>
                 <a className=" font-semibold   hover:text-primary transition-all duration-700 cursor-pointer text-md block py-[14px] lg:px-5 ">
@@ -801,6 +464,7 @@ const Navbar = () => {
                 </a>
               </li>
             </Link>
+
             <Link to="/contact">
               <li>
                 <a className=" font-semibold   hover:text-primary transition-all duration-700 cursor-pointer text-md block py-[14px] lg:px-5">
