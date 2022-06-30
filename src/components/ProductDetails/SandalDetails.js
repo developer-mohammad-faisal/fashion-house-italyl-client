@@ -3,11 +3,11 @@ import { useNavigate, useParams } from "react-router-dom";
 import { SandalsData } from "../../StaticData/CardData";
 import { faCartArrowDown, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import facebook from "../../assets/images/icon/footerImg/social-icon/facebook.png";
-import email from "../../assets/images/icon/footerImg/social-icon/email.png";
-import linkedin from "../../assets/images/icon/footerImg/social-icon/linkedins.png";
-import twitter from "../../assets/images/icon/footerImg/social-icon/twitters.png";
-import instagram from "../../assets/images/icon/footerImg/social-icon/instagram.png";
+import facebook from "../../assets/images/iconsCircle/facebook-circular-logo.png";
+import email from "../../assets/images/iconsCircle/email.png";
+import linkedin from "../../assets/images/iconsCircle/linkedin.png";
+import twitter from "../../assets/images/iconsCircle/twitter.png";
+import instagram from "../../assets/images/iconsCircle/instagram.png";
 import Categories from "../Home/Categories/Categories";
 import Features from "../Home/Features/Features";
 
@@ -61,12 +61,12 @@ const SandalDetails = () => {
                     {" "}
                     <FontAwesomeIcon icon={faHeart} /> <span>Add to wishlist</span>{" "}
                   </button>
-                  <div className="flex space-x-[4px] pt-4">
-                    <img src={facebook} alt="facebook" />
-                    <img src={email} alt="email" />
-                    <img src={linkedin} alt="linkedin" />
-                    <img src={twitter} alt="twitter" />
-                    <img src={instagram} alt="instagram" />
+                  <div className="flex space-x-[7px] pt-4">
+                    <img className="w-[40px] h-[40px]" src={facebook} alt="facebook" />
+                    <img className="w-[40px] h-[40px]" src={email} alt="email" />
+                    <img className="w-[40px] h-[40px]" src={linkedin} alt="linkedin" />
+                    <img className="w-[40px] h-[40px]" src={twitter} alt="twitter" />
+                    <img className="w-[40px] h-[40px]" src={instagram} alt="instagram" />
                   </div>
                 </div>
               </div>
