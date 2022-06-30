@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 
 
 
-
 const Cloth = () => {
   const navigate = useNavigate()
   const [over, setOver] = useState(false);
@@ -19,7 +18,12 @@ const Cloth = () => {
           <div key={product.id} className="card">
             <div className="imgBx">
 
+              
+              <img className="hover-img" src={product.img2} alt="" />
+
+
               <img onClick={() => handleNavigate(product.id)} src={product.img1} alt="" />
+
               <div className="action">
                 <ul>
                   <li>

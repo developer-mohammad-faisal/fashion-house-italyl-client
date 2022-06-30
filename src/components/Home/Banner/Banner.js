@@ -137,11 +137,12 @@ const Banner = () => {
                   Shop Now
 
                 </button>
-              </Fade>
-            </div>
 
+              </div>
+            </div>
           </div>{" "}
         </SwiperSlide>
+ 
 
       </Swiper>
     </div>

@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { CardData2 } from "../../../StaticData/CardData";
 
 const SingleLIneProducts = () => {
+
   return (
     <section id="products2">
       <div className="button">
@@ -10,7 +11,7 @@ const SingleLIneProducts = () => {
 
       <div className="main_product_card">
         {CardData2.map((product, i) => (
-          <div key={product.id} className="card">
+          <div key={product.id} className="card" style={{ transition: '0.5s' }}>
             <div className="imgBx">
               <img src={product.img} alt="" />
               <div className="action">
