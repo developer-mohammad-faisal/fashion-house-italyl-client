@@ -7,6 +7,7 @@ const FeaturedProduct = () => {
       <section className="bg-white  px-3 pt-3 pb-0 mt-8">
         <h1 className=" text-xl font-bold ">Featured Product</h1>
         <div className="w-20 h-[2px]  bg-black"></div>
+
         {LeftProduct.map((product) => (
           <div key={product.id}>
             <div className="  flex justify-between items-center py-4 px-0 ">
@@ -21,6 +22,8 @@ const FeaturedProduct = () => {
             <hr className="mb-0 pb-0 w-full" />
           </div>
         ))}
+
+        
       </section>
     </Fragment>
   );

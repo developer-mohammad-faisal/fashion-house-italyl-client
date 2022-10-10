@@ -20,48 +20,17 @@ import Fade from 'react-reveal/Fade';
 
 const Banner = () => {
   return (
-    <div className="h-[260px] w-full mb-10">
-      {/* hello */}
+
+    <section className="h-[260px] w-full mb-10">
+      
+
       <Swiper
         navigation={true}
         modules={[Navigation]}
         className="mySwiper h-[260px] mb-10"
       >
-        {" "}
-        {/* <SwiperSlide>
-          <div
-            style={{ backgroundImage: `url(${accesories})`, backgroundSize: '100%' }}
-            className="bg-no-repeat h-full w-full bg-center"
-          >
-            <div className="pl-0 md:pl-16 w-full md:w-1/2 md:bg-transparent bg-[#e0e2ebad] flex items-center md:items-start justify-center h-full flex-col ">
-              <Fade top>
-              <h1
-                className="text-md md:text-xl text-gray-700"
-              >
-                Top Trending
-              </h1>
-              </Fade>
-              <h1
-                className="text-3xl md:text-2xl my-2 md:my-3 font-bold text-[#1B3C7A]"
-              >
-                <span className="md:hidden">Men's Clothes</span>
-                <span className="hidden md:block">Clothings</span>
-              </h1>
-              <p
-                className="text-gray-600 hidden md:block"
-              >
-                What you wear is how you present yourself to the world, especially today, when human contacts are so quick.{" "}
-              </p>
-              <button
-                className="bg-[#789bdf] btn-sm  hover:bg-primary transition-all duration-500 ease-in-out font-semibold text-sm md:mt-5 mt-2 text-black "
-              >
-                Shop Now
-              </button>
-            </div>
-          </div>{" "}
-        </SwiperSlide> */}
+        
         <SwiperSlide>
-
           <div
             style={{ backgroundImage: `url(${fashion})`, backgroundSize: '100%' }}
             className="bg-no-repeat bg-cover bg-center w-full   h-full"
@@ -99,9 +68,9 @@ const Banner = () => {
                 </Fade>
               </div>
             </div>
-          </div>{" "}
-
+          </div>
         </SwiperSlide>
+
         <SwiperSlide>
           <div
             style={{ backgroundImage: `url(${clothings})`, backgroundSize: '100%' }}
@@ -137,15 +106,17 @@ const Banner = () => {
                   Shop Now
 
                 </button>
+                </Fade>
 
               </div>
             </div>
-          </div>{" "}
         </SwiperSlide>
- 
-
+      
       </Swiper>
-    </div>
+
+    </section>
+    
+ 
   );
 };
 
