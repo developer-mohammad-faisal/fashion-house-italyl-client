@@ -2,7 +2,7 @@
 ![Logo](https://i.ibb.co/Px3hzhP/unnamed.gif)
 
 
-# [Fashion House](https://drc-html-css-project.netlify.app/)
+# [Fashion House](https://fashionhouse-italy.netlify.app/home)
 
 A brief description of what this project does and who it's for
 
